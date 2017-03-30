@@ -1,6 +1,7 @@
 -- Table creation scripts
 
 -- DROP TABLE [T_STG_CARGO_CARRYING_SHIPS];
+-- TRUNCATE TABLE T_STG_CARGO_CARRYING_SHIPS;
 -- Script for creation of staging table for cargo carrying ships
 -- TODO :: create the primary key and other constraints
 CREATE TABLE [T_STG_CARGO_CARRYING_SHIPS] (
@@ -27,6 +28,7 @@ CREATE TABLE [T_STG_CARGO_CARRYING_SHIPS] (
 );
 
 -- DROP TABLE T_CARGO_CARRYING_SHIPS;
+-- TRUNCATE TABLE T_CARGO_CARRYING_SHIPS;
 -- Script for creation of the main tables
 -- TODO :: create the primary key and other constraints
 CREATE TABLE [T_CARGO_CARRYING_SHIPS] (
