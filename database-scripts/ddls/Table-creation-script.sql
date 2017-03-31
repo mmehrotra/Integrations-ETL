@@ -2,6 +2,7 @@
 
 -- DROP TABLE [T_STG_CARGO_CARRYING_SHIPS];
 -- TRUNCATE TABLE T_STG_CARGO_CARRYING_SHIPS;
+-- SELECT * FROM [T_STG_CARGO_CARRYING_SHIPS];
 -- Script for creation of staging table for cargo carrying ships
 -- TODO :: create the primary key and other constraints
 CREATE TABLE [T_STG_CARGO_CARRYING_SHIPS] (
@@ -28,11 +29,12 @@ CREATE TABLE [T_STG_CARGO_CARRYING_SHIPS] (
 );
 
 -- DROP TABLE T_CARGO_CARRYING_SHIPS;
--- TRUNCATE TABLE T_CARGO_CARRYING_SHIPS;
+-- TRUNCATE TABLE T_CARGO_CARRYING_SHIP;
+-- SELECT * FROM T_CARGO_CARRYING_SHIP;
 -- Script for creation of the main tables
 -- TODO :: create the primary key and other constraints
-CREATE TABLE [T_CARGO_CARRYING_SHIPS] (
-    [LRIMOShipNo] varchar(255) PRIMARY KEY,
+CREATE TABLE [T_CARGO_CARRYING_SHIP] (
+    [LRIMOShipNo] varchar(255),
     [Latitude] varchar(255),
     [Longitude] varchar(255),
     [ShipName] varchar(255),
@@ -57,4 +59,17 @@ CREATE TABLE [T_CARGO_CARRYING_SHIPS] (
     [REC_UPDATED_TIME] DATETIME,
     [REC_UPDATED_BY] VARCHAR(255),
     [SOURCE_FILE_NAME] VARCHAR(255)
+);
+
+-- Staging table for Cargo's TblLastPortOfCall
+CREATE TABLE [T_STG_CARGO_TBL_LAST_PORT_OF_CALL] (
+    [MMSI] varchar(255),
+    [LRNO] varchar(255),
+    [Port_ID] varchar(255),
+    [CountryCode] varchar(255),
+    [Country] varchar(255),
+    [LastPortOfCall] varchar(255),
+    [ArrDate] varchar(255),
+    [SailDate] varchar(255),
+    [PortCallId] varchar(255)   
 );

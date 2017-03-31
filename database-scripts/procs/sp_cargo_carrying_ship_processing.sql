@@ -13,7 +13,7 @@ GO
 -- Description:	<Procedure for inserting the data into the main table of Cargo Carrying ships>
 -- Schema name : Schema name has been defined as integrations
 -- =============================================
-CREATE PROCEDURE [sp_Cargo_carrying_ship_processing] @currentFileName varchar(255)
+ALTER PROCEDURE [sp_Cargo_carrying_ship_processing] @currentFileName varchar(255)
 AS
 
 BEGIN TRY
@@ -21,7 +21,7 @@ BEGIN TRY
 	print SYSDATETIME()
 	print @currentFileName
 
-	INSERT INTO T_CARGO_CARRYING_SHIPS(LRIMOShipNo, Latitude, Longitude, ShipName, ShipType,
+	INSERT INTO T_CARGO_CARRYING_SHIP(LRIMOShipNo, Latitude, Longitude, ShipName, ShipType,
            Draught, Beam, Length, CallSign, MMSI, Speed, Heading,
            Destination, DestinationTidied, ETA, AdditionalInfo,
 		   MovementDateTime, MovementID, MoveStatus,TEU,
@@ -35,6 +35,9 @@ BEGIN TRY
 		   'SYSTEM',@currentFileName
     FROM T_STG_CARGO_CARRYING_SHIPS;
 	
+	-- Truncating the staging table after the insertion.
+	TRUNCATE TABLE T_STG_CARGO_CARRYING_SHIPS;
+		
 	COMMIT;
 	
  END TRY
