@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="3/28/2017 12:23:49 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Cargo-package"
   DTS:PackageType="5"
-  DTS:VersionBuild="47"
-  DTS:VersionGUID="{79201B5A-65D4-4F2A-A1AA-10EF8242C2C3}">
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{5E731E37-4C5C-4EBC-B937-77323166F4B5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -336,7 +336,7 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACX6qiRxqq2RYDtYhFHYApoAAAAAASAAACgAAAAEAAAAO0yLKVb3YUKrZdXtvIfKksoAAAAs0qwS5nX8CDZnKPi4zHDtfISYkijuH0MAvcppKn96EZtwWzsD5ptDBQAAAC52g7CRY/j6L+99xI7ocDk/MGd+Q</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADHjJJ8qaBav9v29wDK8lOdAAAAAASAAACgAAAAEAAAAAPzJzvPooBBFlrmUdGHVeUoAAAAkvEdROFtvdYwryfAfeNaG0p2G9Ym5qHKcAi7E6yAgjG+NoYH/erKcxQAAAAlgi12AeCW5hbKCwwMO0oz8o7JgA</DTS:Property>
           </DTS:FtpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -363,7 +363,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABwJANR27Rtx8xwDliUwd8CAAAAAASAAACgAAAAEAAAAO02nX50vUd1pNdKHuPsKrUYAAAAXjPDikRTL3ZEtEOf8x04/1/NlQQ0NTndFAAAAJApqXEW6Ae20xjVZhZsYVFIeMIl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD+BF2Mse3WRKVL6prJ6njyAAAAAASAAACgAAAAEAAAAPjnhyz+aARzhd5zfbBQJ1IYAAAARmdbwCrypqBlgMQdB0oLqXkJoHCKgCyoFAAAAPoRmdUwnz9branMAlF6K8E3exyi</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1633,6 +1633,7 @@
           <DTS:ObjectData>
             <FileSystemData
               TaskOperationType="MoveFile"
+              TaskOverwriteDestFile="True"
               TaskSourcePath="{16C2C0FB-CA0E-4D0B-A802-47F0805FB844}"
               TaskDestinationPath="User::cargoArchiveFolder"
               TaskIsDestinationVariable="True" />
@@ -2348,6 +2349,7 @@
           <DTS:ObjectData>
             <FileSystemData
               TaskOperationType="MoveFile"
+              TaskOverwriteDestFile="True"
               TaskSourcePath="{83F88531-705A-41A2-BD1E-8983CACB8137}"
               TaskDestinationPath="User::cargoArchiveFolder"
               TaskIsDestinationVariable="True" />
@@ -2706,7 +2708,7 @@
     design-time-name="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="173,42"
           Id="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination"
@@ -2734,7 +2736,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
