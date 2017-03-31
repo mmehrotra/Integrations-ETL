@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{FE548157-21F0-4623-8E3C-D21FB1315A12}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{CDD8D73F-13DF-4916-8580-D2E1A88338E1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
           DTS:HeaderRowDelimiter="_x000D__x000A_"
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
           DTS:ConnectionString="D:\integrations\feeds\cargo\processing\201703100032_CargoCarryingShips.CSV">
           <DTS:FlatFileColumns>
@@ -42,7 +42,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;LRIMOShipNo&quot;"
-              DTS:DTSID="{B58F6705-ADDE-45B4-9CF4-7C89C67C10FA}"
+              DTS:DTSID="{39B88813-DF77-440E-8D2E-EC8687F70955}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -51,7 +51,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Latitude&quot;"
-              DTS:DTSID="{1B113A88-74BA-4713-B8C2-E69CAAFD04D2}"
+              DTS:DTSID="{68F9740D-B0A6-48E5-97CB-10973CD06B5D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -60,7 +60,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Longitude&quot;"
-              DTS:DTSID="{0D69C81A-AC55-4F8F-A9F6-AA5290FB923E}"
+              DTS:DTSID="{7195CD32-A574-4F52-A25B-D8EC0D64609C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -69,7 +69,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;ShipName&quot;"
-              DTS:DTSID="{C0963E1C-1B6F-468B-BE64-73D570AF4DB4}"
+              DTS:DTSID="{3F6DA229-CD42-48F0-872A-9F37BE7C10A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -78,7 +78,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;ShipType&quot;"
-              DTS:DTSID="{7F53C2F3-50B6-4D20-A211-96F4B74207DA}"
+              DTS:DTSID="{84401521-E850-4E35-9E2C-0F0910D284DE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -87,7 +87,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Draught&quot;"
-              DTS:DTSID="{2049C3B4-EE58-4DD3-81A2-5FC8FC264F18}"
+              DTS:DTSID="{B5B8D355-45FD-4375-A2B4-76813B896169}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -96,7 +96,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Beam&quot;"
-              DTS:DTSID="{565BBDA1-D9C9-4C1D-AF11-857755450323}"
+              DTS:DTSID="{062DC154-89F2-4667-A138-7AADFE4F7A79}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -105,7 +105,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Length&quot;"
-              DTS:DTSID="{1C1EA28F-DABA-42A5-8B6D-923FF5B5C29B}"
+              DTS:DTSID="{A9BB2B09-21A7-42A4-A742-891F11B547F6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -114,7 +114,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;CallSign&quot;"
-              DTS:DTSID="{2F17DDED-3927-42DC-B172-5E2355EEC25C}"
+              DTS:DTSID="{C7A42A7D-E06B-4E03-85C4-0D8B400BB5FE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +123,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MMSI"
-              DTS:DTSID="{FDD593F8-0957-4316-ADC7-7313907827DB}"
+              DTS:DTSID="{4FFDC31E-F2A8-46A9-A81E-13A65E9E93CD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -132,7 +132,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Speed&quot;"
-              DTS:DTSID="{D08251CE-4D46-45F3-B71E-A438C0F6F813}"
+              DTS:DTSID="{8364EDFA-0BCF-4231-AD10-E357B2B464E7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -141,7 +141,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Heading"
-              DTS:DTSID="{B556638E-B98B-435E-BA07-27367711D8DB}"
+              DTS:DTSID="{521769CC-1732-4DC1-955D-EBE0DEB512D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -150,7 +150,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Destination&quot;"
-              DTS:DTSID="{C2FFCCF0-5AF2-4C6F-B5EA-84AD99FE2613}"
+              DTS:DTSID="{4541AFE0-C531-4E8C-AB7D-38E0A1AB93E5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -158,7 +158,7 @@
               DTS:DataType="302"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;DestinationTidied&quot;"
-              DTS:DTSID="{E0EA19D2-C19C-4A8D-A1EE-82473C33F5F0}"
+              DTS:DTSID="{15A1E984-B4E7-4767-A593-64BB85176B83}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +167,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;ETA&quot;"
-              DTS:DTSID="{FC896A36-6B55-4EAA-A1DA-0EBDECE6CE55}"
+              DTS:DTSID="{49E24403-0F4E-40CB-95DE-B623F427D420}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -176,7 +176,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;AdditionalInfo&quot;"
-              DTS:DTSID="{15E9864C-FDBB-49D3-900C-BA5BD51E03CE}"
+              DTS:DTSID="{AA90E79F-D08B-48D7-8E1F-A3D6B175A357}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -185,7 +185,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;MovementDateTime&quot;"
-              DTS:DTSID="{DD783E59-2361-4F50-BEDE-C82A4AED66AD}"
+              DTS:DTSID="{B5C07AB5-3B3A-4B09-85DC-B69C28C6E9F1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -194,7 +194,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MovementID"
-              DTS:DTSID="{04C86FD9-E78E-40BB-A27C-F6AF1D4F40CF}"
+              DTS:DTSID="{D1F5E147-563B-456F-82D7-083AB741101A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -203,7 +203,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;MoveStatus&quot;"
-              DTS:DTSID="{DA04AF8A-1D5A-467B-9E0B-75310D4F6459}"
+              DTS:DTSID="{9308E828-CF13-44CB-880B-2E7F68B00EB9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -212,7 +212,111 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TEU"
-              DTS:DTSID="{6EBD675A-4C7A-46EA-A93E-B82BD5C54D44}"
+              DTS:DTSID="{39075591-757B-4C18-B116-AD48A0377E60}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[cargo-tblLastPort-ConnectionMgnr]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Connection manager for cargo's tblLastPortCall files"
+      DTS:DTSID="{7302EB91-878E-4D9C-AACE-F5780BA3284A}"
+      DTS:ObjectName="cargo-tblLastPort-ConnectionMgnr">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::cargoTblFullProcPath]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\integrations\feeds\cargo\processing\201703100035_tblLastPortofCall.CSV">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MMSI"
+              DTS:DTSID="{1D427F69-E2A6-43DD-9D91-390E95BF40DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LRNO"
+              DTS:DTSID="{C02CF82C-8821-4555-81E2-DC6C6FDC1420}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Port_ID"
+              DTS:DTSID="{CF9BC73E-CC52-4064-8734-688C8CCE684F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CountryCode"
+              DTS:DTSID="{618FF254-500E-487E-A2AA-C2FA46423AA0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{50834708-2840-42B2-9CD4-08EECABF8C4C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastPortofCall"
+              DTS:DTSID="{AE921C70-9131-4331-9D28-AA76A606FC50}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArrDate"
+              DTS:DTSID="{EBCB9A8A-090A-4A09-BF4E-867527E42A37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Saildate"
+              DTS:DTSID="{D3FB7106-9C2B-455C-B141-7BAD763EBF64}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PortCallID"
+              DTS:DTSID="{0F866EEA-B96C-4C2C-9B0B-ABC0B9B1026C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -232,7 +336,7 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAzJZUl4v56/F/LSso3Ka7pAAAAAASAAACgAAAAEAAAAITUGjaWgvrd3dx4Z5uFVWcoAAAACEeZKuPyAtG/JCU6ZersZqOxde24d0YrctnmtsM2W46P4aja9awSAhQAAACx+2eHjTGrZYVO+DC468Zzo5n+jA</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAjuHtoDA+2YIXGYthQE0z2AAAAAASAAACgAAAAEAAAAOr9aU3Pg9YS8tPDZK35HSAoAAAAF/HoXvQbgV4eAF/bW+ftKSnpkU78PUyZxzXxYvEDpL/IhgRcb4VKtBQAAACKkAGDjUKcg3rUKbSnvwE69xO0xQ</DTS:Property>
           </DTS:FtpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -255,11 +359,11 @@
       DTS:ObjectName="localhost.integrations.sa">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=integrations;Provider=SQLNCLI10.1;Application Name=SSIS-Package-{B89030BC-5EC6-4F12-AC89-ED987EF02C27}localhost.integrations.sa;">
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=integrations;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-Package-{B89030BC-5EC6-4F12-AC89-ED987EF02C27}localhost.integrations.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADxjMDZXuAsGFLaz79fOMooAAAAAASAAACgAAAAEAAAAAZzu/bBD7RYJLtiI8o7ieMYAAAAh34yLYiZDzq63g0jblR8Zxu1oEnY/zyPFAAAAJFooy/Vk/GstL2AMoP8TA0RRtuR</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC7wW0vgJAwwdSZoQNODMaGAAAAAASAAACgAAAAEAAAAJdHjuCYaaylv5vKr/np/QMYAAAAddwv3OiKlik7WvZyJtduXvYOuJZNrCxHFAAAAFxw4UWrmmRCDr3qmf7LgSEZFI8M</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -296,7 +400,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="CargoFTPCompPath">
       <DTS:VariableValue
-        DTS:DataType="8">\Cargo Carrying Ships_20170330.zip</DTS:VariableValue>
+        DTS:DataType="8">\Cargo Carrying Ships_20170331.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -355,6 +459,17 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{FE0F8F89-763D-430D-AC39-DF25C9A35D55}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::cargoProcessingFolder] +  @[User::tblCurrentFile]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="cargoTblFullProcPath">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\integrations\feeds\cargo\processing\201703100035_tblLastPortofCall.CSV</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{88AED0CA-3D90-4242-9FE2-4150BEE7469C}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;e &quot; + &quot;\&quot;&quot; + @[User::cargoInbound] +  @[User::CargoFTPCompPath] + &quot;\&quot;&quot; + &quot; -o&quot; +  @[User::cargoProcessingFolder] + &quot; -y&quot;"
@@ -362,7 +477,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="cargoUnzipExp">
       <DTS:VariableValue
-        DTS:DataType="8">e "D:\integrations\feeds\cargo\inbound\\Cargo Carrying Ships_20170330.zip" -oD:\integrations\feeds\cargo\processing\ -y</DTS:VariableValue>
+        DTS:DataType="8">e "D:\integrations\feeds\cargo\inbound\\Cargo Carrying Ships_20170331.zip" -oD:\integrations\feeds\cargo\processing\ -y</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -373,7 +488,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="currDate">
       <DTS:VariableValue
-        DTS:DataType="8">20170330</DTS:VariableValue>
+        DTS:DataType="8">20170331</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -417,38 +532,25 @@
       <DTS:VariableValue
         DTS:DataType="8">processing\</DTS:VariableValue>
     </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0ADBBBD3-B647-4416-9AFC-669623135C14}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="tblCurrentFile">
+      <DTS:VariableValue
+        DTS:DataType="8">201703100035_tblLastPortofCall.CSV</DTS:VariableValue>
+    </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Execute Process Task"
-      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.ExecuteProcess, Microsoft.SqlServer.ExecProcTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
-      DTS:Description="Execute Process Task"
-      DTS:DTSID="{7B896D07-10C2-4773-8A1B-C951CA8AACE3}"
-      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.ExecuteProcess, Microsoft.SqlServer.ExecProcTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Execute Process Task"
-      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:PropertyExpression
-        DTS:Name="Arguments">@[User::cargoUnzipExp]</DTS:PropertyExpression>
-      <DTS:PropertyExpression
-        DTS:Name="WorkingDirectory">@[User::cargoProcessingFolder]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <ExecuteProcessData
-          Executable="C:\Program Files\7-Zip\7z.exe"
-          Arguments="e &quot;D:\integrations\feeds\cargo\inbound\\Cargo Carrying Ships_20170330.zip&quot; -oD:\integrations\feeds\cargo\processing\ -y"
-          WorkingDirectory="D:\integrations\feeds\cargo\processing\" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Foreach Loop Container"
+      DTS:refId="Package\Cargo-Carrying-Ships-Iterator"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
       DTS:DTSID="{6E69737F-8CD5-4872-A73D-3ABFCA5DAE9B}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Foreach Loop Container">
+      DTS:ObjectName="Cargo-Carrying-Ships-Iterator">
       <DTS:ForEachEnumerator
         DTS:CreationName="DTS.ForEachFileEnumerator.3"
         DTS:DTSID="{70DC0815-2A7E-4509-91B6-A795FE2A9247}"
@@ -460,7 +562,7 @@
             <FEFEProperty
               Folder="D:\integrations\feeds\cargo\processing\" />
             <FEFEProperty
-              FileSpec="*.csv" />
+              FileSpec="*CargoCarryingShips.csv" />
             <FEFEProperty
               FileNameRetrievalType="1" />
             <FEFEProperty
@@ -471,13 +573,13 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Foreach Loop Container\Data Flow Task"
+          DTS:refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main"
           DTS:CreationName="SSIS.Pipeline.3"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{1B0FFAC1-EBDF-4F5B-A791-7ED220A1C2BE}"
           DTS:ExecutableType="SSIS.Pipeline.3"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Data Flow Task"
+          DTS:ObjectName="Data Flow Task- Cargo Main"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
           <DTS:ObjectData>
@@ -485,7 +587,7 @@
               version="1">
               <components>
                 <component
-                  refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source"
+                  refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source"
                   componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
                   contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Flat File Source"
@@ -505,25 +607,25 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Connections[FlatFileConnection]"
                       connectionManagerID="Package.ConnectionManagers[Cargo-CarryingShips-File-Mgnr]"
                       connectionManagerRefId="Package.ConnectionManagers[Cargo-CarryingShips-File-Mgnr]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output]"
                       name="Flat File Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;LRIMOShipNo&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;LRIMOShipNo&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;LRIMOShipNo&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;LRIMOShipNo&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;LRIMOShipNo&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;LRIMOShipNo&quot;]"
                           name="&quot;LRIMOShipNo&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -538,14 +640,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Latitude&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Latitude&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Latitude&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Latitude&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Latitude&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Latitude&quot;]"
                           name="&quot;Latitude&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -560,14 +662,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Longitude&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Longitude&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Longitude&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Longitude&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Longitude&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Longitude&quot;]"
                           name="&quot;Longitude&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -582,14 +684,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipName&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipName&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipName&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipName&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipName&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipName&quot;]"
                           name="&quot;ShipName&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -604,14 +706,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipType&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipType&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipType&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipType&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipType&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipType&quot;]"
                           name="&quot;ShipType&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -626,14 +728,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Draught&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Draught&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Draught&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Draught&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Draught&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Draught&quot;]"
                           name="&quot;Draught&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -648,14 +750,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Beam&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Beam&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Beam&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Beam&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Beam&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Beam&quot;]"
                           name="&quot;Beam&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -670,14 +772,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Length&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Length&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Length&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Length&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Length&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Length&quot;]"
                           name="&quot;Length&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -692,14 +794,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;CallSign&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;CallSign&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;CallSign&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;CallSign&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;CallSign&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;CallSign&quot;]"
                           name="&quot;CallSign&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -714,14 +816,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MMSI]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MMSI]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]"
                           name="MMSI"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -736,14 +838,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Speed&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Speed&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Speed&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Speed&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Speed&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Speed&quot;]"
                           name="&quot;Speed&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -758,14 +860,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Heading]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[Heading]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Heading]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Heading]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Heading]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[Heading]"
                           name="Heading"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -780,14 +882,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Destination&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Destination&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Destination&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Destination&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Destination&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Destination&quot;]"
                           name="&quot;Destination&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -802,13 +904,13 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;DestinationTidied&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;DestinationTidied&quot;]"
                           codePage="1252"
                           dataType="text"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;DestinationTidied&quot;]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;DestinationTidied&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;DestinationTidied&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;DestinationTidied&quot;]"
                           name="&quot;DestinationTidied&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -823,14 +925,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ETA&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ETA&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ETA&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ETA&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ETA&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ETA&quot;]"
                           name="&quot;ETA&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -845,14 +947,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;AdditionalInfo&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;AdditionalInfo&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;AdditionalInfo&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;AdditionalInfo&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;AdditionalInfo&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;AdditionalInfo&quot;]"
                           name="&quot;AdditionalInfo&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -867,14 +969,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MovementDateTime&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MovementDateTime&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MovementDateTime&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MovementDateTime&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MovementDateTime&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MovementDateTime&quot;]"
                           name="&quot;MovementDateTime&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -889,14 +991,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[MovementID]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MovementID]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MovementID]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MovementID]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[MovementID]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MovementID]"
                           name="MovementID"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -911,14 +1013,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MoveStatus&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MoveStatus&quot;]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MoveStatus&quot;]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MoveStatus&quot;]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MoveStatus&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MoveStatus&quot;]"
                           name="&quot;MoveStatus&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -933,14 +1035,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TEU]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[TEU]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEU]"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEU]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TEU]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[TEU]"
                           name="TEU"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -958,120 +1060,120 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;LRIMOShipNo&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;LRIMOShipNo&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;LRIMOShipNo&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Latitude&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Latitude&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;Latitude&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Longitude&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Longitude&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;Longitude&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipName&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipName&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;ShipName&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipType&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipType&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;ShipType&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Draught&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Draught&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;Draught&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Beam&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Beam&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;Beam&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Length&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Length&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;Length&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;CallSign&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;CallSign&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;CallSign&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MMSI]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MMSI]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="MMSI" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Speed&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Speed&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;Speed&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Heading]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Heading]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Heading" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Destination&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Destination&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;Destination&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;DestinationTidied&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;DestinationTidied&quot;]"
                           codePage="1252"
                           dataType="text"
                           name="&quot;DestinationTidied&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ETA&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ETA&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;ETA&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;AdditionalInfo&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;AdditionalInfo&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;AdditionalInfo&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MovementDateTime&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MovementDateTime&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;MovementDateTime&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MovementID]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MovementID]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="MovementID" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MoveStatus&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MoveStatus&quot;]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="&quot;MoveStatus&quot;" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEU]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEU]"
                           codePage="1252"
                           dataType="str"
                           length="50"
@@ -1079,27 +1181,27 @@
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output]"
                       isErrorOut="true"
                       name="Flat File Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           codePage="1252"
                           dataType="text"
                           description="Flat File Source Error Output Column"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           name="Flat File Source Error Output Column" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -1108,7 +1210,7 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination"
+                  refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination"
                   componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
@@ -1165,7 +1267,7 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[localhost.integrations.sa]"
                       connectionManagerRefId="Package.ConnectionManagers[localhost.integrations.sa]"
                       description="The OLE DB runtime connection used to access the database."
@@ -1173,283 +1275,283 @@
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MMSI]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MMSI]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="MMSI"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MMSI]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MMSI]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Heading]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Heading]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Heading"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Heading]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Heading]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Heading]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[Heading]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MovementID]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MovementID]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="MovementID"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementID]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[MovementID]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementID]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MovementID]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TEU]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TEU]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="TEU"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TEU]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TEU]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TEU]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[TEU]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;LRIMOShipNo&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;LRIMOShipNo&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;LRIMOShipNo&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRIMOShipNo]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;LRIMOShipNo&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRIMOShipNo]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;LRIMOShipNo&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Latitude&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Latitude&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;Latitude&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Latitude]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Latitude&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Latitude]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Latitude&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Longitude&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Longitude&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;Longitude&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Longitude]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Longitude&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Longitude]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Longitude&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;ShipName&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;ShipName&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;ShipName&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipName]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipName&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipName]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipName&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;ShipType&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;ShipType&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;ShipType&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipType]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipType&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipType]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipType&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Draught&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Draught&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;Draught&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Draught]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Draught&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Draught]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Draught&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Beam&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Beam&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;Beam&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Beam]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Beam&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Beam]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Beam&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Length&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Length&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;Length&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Length]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Length&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Length]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Length&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;CallSign&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;CallSign&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;CallSign&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CallSign]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;CallSign&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CallSign]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;CallSign&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Speed&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Speed&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;Speed&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Speed]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Speed&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Speed]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Speed&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Destination&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Destination&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;Destination&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Destination]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Destination&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Destination]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Destination&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;AdditionalInfo&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;AdditionalInfo&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;AdditionalInfo&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AdditionalInfo]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;AdditionalInfo&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AdditionalInfo]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;AdditionalInfo&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;MovementDateTime&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;MovementDateTime&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;MovementDateTime&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementDateTime]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MovementDateTime&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementDateTime]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MovementDateTime&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;MoveStatus&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;MoveStatus&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;MoveStatus&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveStatus]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MoveStatus&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveStatus]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MoveStatus&quot;]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;ETA&quot;]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;ETA&quot;]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="&quot;ETA&quot;"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ETA]"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ETA&quot;]" />
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ETA]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ETA&quot;]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MMSI]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MMSI]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="MMSI" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Heading]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Heading]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Heading" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementID]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementID]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="MovementID" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TEU]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TEU]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="TEU" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRIMOShipNo]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRIMOShipNo]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="LRIMOShipNo" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Latitude]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Latitude]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Latitude" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Longitude]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Longitude]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Longitude" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipName]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipName]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="ShipName" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipType]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipType]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="ShipType" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Draught]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Draught]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Draught" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Beam]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Beam]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Beam" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Length]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Length]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Length" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CallSign]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CallSign]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="CallSign" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Speed]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Speed]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Speed" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Destination]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Destination]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Destination" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DestinationTidied]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DestinationTidied]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="DestinationTidied" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ETA]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ETA]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="ETA" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AdditionalInfo]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AdditionalInfo]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="AdditionalInfo" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementDateTime]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementDateTime]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="MovementDateTime" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveStatus]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveStatus]"
                           codePage="1252"
                           dataType="str"
                           length="255"
@@ -1459,22 +1561,22 @@
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      synchronousInputId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -1485,22 +1587,22 @@
               </components>
               <paths>
                 <path
-                  refId="Package\Foreach Loop Container\Data Flow Task.Paths[Flat File Source Output]"
-                  endId="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main.Paths[Flat File Source Output]"
+                  endId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   name="Flat File Source Output"
-                  startId="Package\Foreach Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+                  startId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Foreach Loop Container\Execute SQL Task"
+          DTS:refId="Package\Cargo-Carrying-Ships-Iterator\Execute SQL - Cargo Main"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="Execute SQL Task"
           DTS:DTSID="{49ED3943-5BF2-4403-AF88-3C0028F231B0}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Execute SQL Task"
+          DTS:ObjectName="Execute SQL - Cargo Main"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
@@ -1518,13 +1620,13 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Foreach Loop Container\File System Task"
+          DTS:refId="Package\Cargo-Carrying-Ships-Iterator\File System Task - Cargo Main"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="File System Task"
           DTS:DTSID="{39EB380C-EA5F-4EF5-8A74-F96E034A0D83}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
-          DTS:ObjectName="File System Task"
+          DTS:ObjectName="File System Task - Cargo Main"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
@@ -1539,31 +1641,53 @@
       </DTS:Executables>
       <DTS:PrecedenceConstraints>
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          DTS:refId="Package\Cargo-Carrying-Ships-Iterator.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
           DTS:DTSID="{779FE73F-991D-43D7-A240-4666FE85DC1C}"
-          DTS:From="Package\Foreach Loop Container\Data Flow Task"
+          DTS:From="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
-          DTS:To="Package\Foreach Loop Container\Execute SQL Task" />
+          DTS:To="Package\Cargo-Carrying-Ships-Iterator\Execute SQL - Cargo Main" />
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
+          DTS:refId="Package\Cargo-Carrying-Ships-Iterator.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
           DTS:DTSID="{FB312145-4192-40E5-AD96-07412AD7EDE3}"
-          DTS:From="Package\Foreach Loop Container\Execute SQL Task"
+          DTS:From="Package\Cargo-Carrying-Ships-Iterator\Execute SQL - Cargo Main"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
-          DTS:To="Package\Foreach Loop Container\File System Task"
+          DTS:To="Package\Cargo-Carrying-Ships-Iterator\File System Task - Cargo Main"
           DTS:Value="2" />
       </DTS:PrecedenceConstraints>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{EC11FCE5-5053-4C49-BDDC-6C4612FB211B}"
-          DTS:ObjectName="{EC11FCE5-5053-4C49-BDDC-6C4612FB211B}"
+          DTS:DTSID="{10F1E9B1-3819-4523-98B6-D4C26208E9E5}"
+          DTS:ObjectName="{10F1E9B1-3819-4523-98B6-D4C26208E9E5}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::currentFile" />
       </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute Process Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.ExecuteProcess, Microsoft.SqlServer.ExecProcTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{7B896D07-10C2-4773-8A1B-C951CA8AACE3}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.ExecuteProcess, Microsoft.SqlServer.ExecProcTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Process Task"
+      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">@[User::cargoUnzipExp]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="WorkingDirectory">@[User::cargoProcessingFolder]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\7-Zip\7z.exe"
+          Arguments="e &quot;D:\integrations\feeds\cargo\inbound\\Cargo Carrying Ships_20170331.zip&quot; -oD:\integrations\feeds\cargo\processing\ -y"
+          WorkingDirectory="D:\integrations\feeds\cargo\processing\" />
+      </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\FTP Task"
@@ -1586,6 +1710,677 @@
           TaskRemotePath="User::CargoFTPCompPath" />
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\tblLastPortofCall-Iterator"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{7D768088-10A7-4CE8-BFC7-0FC55B5587F0}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="tblLastPortofCall-Iterator">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="DTS.ForEachFileEnumerator.3"
+        DTS:DTSID="{0754D740-03F9-4352-8CB0-56B966857EBA}"
+        DTS:ObjectName="{0754D740-03F9-4352-8CB0-56B966857EBA}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::cargoProcessingFolder]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="D:\integrations\feeds\cargo\processing\" />
+            <FEFEProperty
+              FileSpec="*tblLastPortofCall.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="1" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl"
+          DTS:CreationName="SSIS.Pipeline.3"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{94F43AF8-3849-4BE9-A43E-9E2A72B3441D}"
+          DTS:ExecutableType="SSIS.Pipeline.3"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Flow Task- Cargo Tbl"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source"
+                  componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[cargo-tblLastPort-ConnectionMgnr]"
+                      connectionManagerRefId="Package.ConnectionManagers[cargo-tblLastPort-ConnectionMgnr]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MMSI]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]"
+                          name="MMSI"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LRNO]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]"
+                          name="LRNO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Port_ID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Port_ID]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Port_ID]"
+                          name="Port_ID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[CountryCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CountryCode]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[CountryCode]"
+                          name="CountryCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                          name="Country"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LastPortofCall]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LastPortofCall]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LastPortofCall]"
+                          name="LastPortofCall"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ArrDate]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ArrDate]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ArrDate]"
+                          name="ArrDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Saildate]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Saildate]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Saildate]"
+                          name="Saildate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[PortCallID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PortCallID]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[PortCallID]"
+                          name="PortCallID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MMSI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="MMSI" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LRNO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="LRNO" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Port_ID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Port_ID" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CountryCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CountryCode" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LastPortofCall]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="LastPortofCall" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ArrDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ArrDate" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Saildate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Saildate" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PortCallID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PortCallID" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination"
+                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[T_STG_CARGO_TBL_LAST_PORT_OF_CALL]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.integrations.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.integrations.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MMSI]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MMSI"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MMSI]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LRNO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="LRNO"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRNO]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Port_ID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Port_ID"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Port_ID]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Port_ID]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CountryCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CountryCode"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CountryCode]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[CountryCode]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Country"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LastPortofCall]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="LastPortofCall"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastPortOfCall]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LastPortofCall]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ArrDate]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ArrDate"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ArrDate]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ArrDate]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Saildate]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Saildate"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SailDate]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Saildate]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PortCallID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="PortCallID"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PortCallId]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[PortCallID]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MMSI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="MMSI" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRNO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="LRNO" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Port_ID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Port_ID" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CountryCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="CountryCode" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastPortOfCall]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="LastPortOfCall" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ArrDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="ArrDate" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SailDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="SailDate" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PortCallId]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="PortCallId" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl.Paths[Flat File Source Output]"
+                  endId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\tblLastPortofCall-Iterator\Execute SQL Task- Cargo Tbl"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{51C9E32A-2903-4732-8E5C-13704ED47A21}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task- Cargo Tbl"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{B89030BC-5EC6-4F12-AC89-ED987EF02C27}"
+              SQLTask:SqlStatementSource="EXECUTE sp_Cargo_tbl_processing ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::cargoTblFullProcPath"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\tblLastPortofCall-Iterator\File System Task - Cargo Tbl"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="File System Task"
+          DTS:DTSID="{22954CD1-B568-475B-97FE-E29486381995}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="File System Task - Cargo Tbl"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="MoveFile"
+              TaskSourcePath="{7302EB91-878E-4D9C-AACE-F5780BA3284A}"
+              TaskDestinationPath="User::cargoArchiveFolder"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{2A80F6C4-32EF-496E-9407-ECE677D2842C}"
+          DTS:From="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\tblLastPortofCall-Iterator\Execute SQL Task- Cargo Tbl" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{D6A6390F-5409-4C66-86BC-4601DE3FA6B3}"
+          DTS:From="Package\tblLastPortofCall-Iterator\Execute SQL Task- Cargo Tbl"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\tblLastPortofCall-Iterator\File System Task - Cargo Tbl" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{2C8BFEFF-2528-4480-B4B3-7E6E324ADD83}"
+          DTS:ObjectName="{2C8BFEFF-2528-4480-B4B3-7E6E324ADD83}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::currentFile" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -1603,7 +2398,15 @@
       DTS:From="Package\Execute Process Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
-      DTS:To="Package\Foreach Loop Container" />
+      DTS:To="Package\Cargo-Carrying-Ships-Iterator" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{3B813E96-406D-4252-B008-ED064AC02553}"
+      DTS:From="Package\Cargo-Carrying-Ships-Iterator"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\tblLastPortofCall-Iterator" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1616,18 +2419,18 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="182,42"
           Id="Package\Execute Process Task"
-          TopLeft="199,61" />
+          TopLeft="199,68" />
         <NodeLayout
           Size="124,42"
           Id="Package\FTP Task"
-          TopLeft="26,60" />
+          TopLeft="26,67" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="150,81.5">
+          TopLeft="150,88.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1648,19 +2451,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="153,42"
-          Id="Package\Foreach Loop Container\Data Flow Task"
+          Size="214,42"
+          Id="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main"
           TopLeft="48,22" />
         <NodeLayout
-          Size="160,42"
-          Id="Package\Foreach Loop Container\File System Task"
+          Size="223,42"
+          Id="Package\Cargo-Carrying-Ships-Iterator\File System Task - Cargo Main"
           TopLeft="48,183" />
         <NodeLayout
-          Size="165,42"
-          Id="Package\Foreach Loop Container\Execute SQL Task"
+          Size="204,42"
+          Id="Package\Cargo-Carrying-Ships-Iterator\Execute SQL - Cargo Main"
           TopLeft="47,98" />
         <EdgeLayout
-          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          Id="Package\Cargo-Carrying-Ships-Iterator.PrecedenceConstraints[Constraint]"
           TopLeft="127,64">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1682,45 +2485,57 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="128.75,140">
+          Id="Package\Cargo-Carrying-Ships-Iterator.PrecedenceConstraints[Constraint 1]"
+          TopLeft="149,140">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43"
+              EndConnector="10.5,43"
               Start="0,0"
-              End="0,35.5">
+              End="10.5,35.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.5" />
+                    End="0,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5"
+                    Point2="0,21.5"
+                    Point3="4,21.5" />
+                  <mssgle:LineSegment
+                    End="6.5,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.5,21.5"
+                    Point2="10.5,21.5"
+                    Point3="10.5,25.5" />
+                  <mssgle:LineSegment
+                    End="10.5,35.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-25.304453125,11.9453125,50.60890625,11.609375"
+              BoundingBox="-20.054453125,26.5,50.60890625,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="276,284"
-          Size="276,327"
-          Id="Package\Foreach Loop Container"
+          PanelSize="276,280"
+          Size="276,323"
+          Id="Package\Cargo-Carrying-Ships-Iterator"
           TopLeft="447,19" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="381,82">
+          TopLeft="381,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="66,100.5"
+              EndConnector="66,84"
               Start="0,0"
-              End="58.5,100.5">
+              End="58.5,84">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -1731,13 +2546,98 @@
                     Point2="33,0"
                     Point3="33,4" />
                   <mssgle:LineSegment
-                    End="33,96.5" />
+                    End="33,80" />
                   <mssgle:CubicBezierSegment
-                    Point1="33,96.5"
-                    Point2="33,100.5"
-                    Point3="37,100.5" />
+                    Point1="33,80"
+                    Point2="33,84"
+                    Point3="37,84" />
                   <mssgle:LineSegment
-                    End="58.5,100.5" />
+                    End="58.5,84" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="206,42"
+          Id="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl"
+          TopLeft="50,12" />
+        <NodeLayout
+          Size="218,42"
+          Id="Package\tblLastPortofCall-Iterator\Execute SQL Task- Cargo Tbl"
+          TopLeft="48,88" />
+        <EdgeLayout
+          Id="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint]"
+          TopLeft="128.5,54">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34"
+              Start="0,0"
+              End="0,26.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="216,42"
+          Id="Package\tblLastPortofCall-Iterator\File System Task - Cargo Tbl"
+          TopLeft="43,166" />
+        <EdgeLayout
+          Id="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint 1]"
+          TopLeft="154,130">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="277,269"
+          Size="277,312"
+          Id="Package\tblLastPortofCall-Iterator"
+          TopLeft="799,20" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="723,178.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="76,0"
+              Start="0,0"
+              End="68.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="68.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1750,44 +2650,32 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Foreach Loop Container\Data Flow Task">
+    design-time-name="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="153,42"
-          Id="Package\Foreach Loop Container\Data Flow Task\Flat File Source"
-          TopLeft="161,75" />
+          Id="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source"
+          TopLeft="10,44" />
         <NodeLayout
           Size="173,42"
-          Id="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination"
-          TopLeft="250,191" />
+          Id="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination"
+          TopLeft="226,45" />
         <EdgeLayout
-          Id="Package\Foreach Loop Container\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="237.5,117">
+          Id="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main.Paths[Flat File Source Output]"
+          TopLeft="163,65.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="99,74"
+              EndConnector="63,0"
               Start="0,0"
-              End="99,66.5">
+              End="55.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33"
-                    Point2="0,37"
-                    Point3="4,37" />
-                  <mssgle:LineSegment
-                    End="95,37" />
-                  <mssgle:CubicBezierSegment
-                    Point1="95,37"
-                    Point2="99,37"
-                    Point3="99,41" />
-                  <mssgle:LineSegment
-                    End="99,66.5" />
+                    End="55.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1800,7 +2688,58 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="153,42"
+          Id="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source"
+          TopLeft="53,61" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination"
+          TopLeft="302,65" />
+        <EdgeLayout
+          Id="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl.Paths[Flat File Source Output]"
+          TopLeft="206,84">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96,0"
+              Start="0,0"
+              End="88.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="88.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
