@@ -1,0 +1,2761 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/28/2017 12:23:49 PM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="NOIMMEHRO62921"
+  DTS:CreatorName="SAPIENT\mmehro"
+  DTS:DTSID="{22C66CD6-677D-4300-ABD8-546166ACF4E2}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.5583.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Cargo-package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{5E731E37-4C5C-4EBC-B937-77323166F4B5}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Cargo-CarryingShips-File-Mgnr]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="This connection manager will manage the carrying ship csv files of the cargo domain"
+      DTS:DTSID="{16C2C0FB-CA0E-4D0B-A802-47F0805FB844}"
+      DTS:ObjectName="Cargo-CarryingShips-File-Mgnr">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::cargoFullProcessingPath]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\integrations\feeds\cargo\processing\201703100032_CargoCarryingShips.CSV">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;LRIMOShipNo&quot;"
+              DTS:DTSID="{FFBD7266-0BF5-4BF8-A409-24E30CF3AD91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Latitude&quot;"
+              DTS:DTSID="{1AA79F24-FB8B-48D5-A0B6-9653A9686402}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Longitude&quot;"
+              DTS:DTSID="{695AE786-2805-473D-A719-473666255AA5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;ShipName&quot;"
+              DTS:DTSID="{68F48E71-5DC3-40AD-8373-2B324CD5AB79}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;ShipType&quot;"
+              DTS:DTSID="{933A183A-B9EB-4C1A-94FC-69FB43D40A82}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Draught&quot;"
+              DTS:DTSID="{A5436149-E3AC-49B9-92AF-62BB8E137D2B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Beam&quot;"
+              DTS:DTSID="{526FC9DF-D956-4E12-BAF3-B71829B6A35C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Length&quot;"
+              DTS:DTSID="{48042A9A-C6F1-4AC6-89AB-133BD05225CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;CallSign&quot;"
+              DTS:DTSID="{6F5E77C4-01A0-478A-BE30-680C4ACD473D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MMSI"
+              DTS:DTSID="{1EFC96AF-F34C-458F-AF09-65D583993A35}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Speed&quot;"
+              DTS:DTSID="{713CD570-E3F8-4C0F-9580-FF19CAA4C5CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Heading"
+              DTS:DTSID="{AEB78474-D7D4-4418-9C5C-4545B72C6733}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Destination&quot;"
+              DTS:DTSID="{7E3737BE-A2DF-47DF-9BC1-B1402D92D8C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;DestinationTidied&quot;"
+              DTS:DTSID="{B014D7EE-DDB6-4484-BCD0-D3ED99807527}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;ETA&quot;"
+              DTS:DTSID="{67F52541-888D-499A-A331-0575EC6701F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;AdditionalInfo&quot;"
+              DTS:DTSID="{0632381C-1514-4E5C-9C5E-1B2AAD864E1D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;MovementDateTime&quot;"
+              DTS:DTSID="{75784709-D68B-4796-AAEF-DD71723B018E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MovementID"
+              DTS:DTSID="{2C23BE0E-821B-42CF-BE57-C6A7FA86AABE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;MoveStatus&quot;"
+              DTS:DTSID="{80BE88A9-1ACF-40BB-9C1C-D2D432EA9B96}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TEU"
+              DTS:DTSID="{9FE28CDD-E6D8-4C69-9731-8A2A51ABD365}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[cargo-tblLastPort-ConnectionMgnr]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Connection manager for cargo's tblLastPortCall files"
+      DTS:DTSID="{83F88531-705A-41A2-BD1E-8983CACB8137}"
+      DTS:ObjectName="cargo-tblLastPort-ConnectionMgnr">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::cargoTblFullProcPath]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\integrations\feeds\cargo\processing\201703100035_tblLastPortofCall.CSV">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MMSI"
+              DTS:DTSID="{C51EAF2A-97E9-424E-88B3-68416419943F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LRNO"
+              DTS:DTSID="{22E72926-C420-4AC0-86FB-B26A60EC6BD8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Port_ID"
+              DTS:DTSID="{FEE1024B-06DD-4378-884F-06C6BA146199}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CountryCode"
+              DTS:DTSID="{94ED7BC2-B4D0-4298-9E1A-EEED6B55077C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{859BC6E9-2B34-42B6-8287-C95FA19B62F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastPortofCall"
+              DTS:DTSID="{C4BFA68F-71F3-446B-B344-A04A7D398654}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArrDate"
+              DTS:DTSID="{5EB1C92C-CCC6-42F4-91FE-7926AD99D234}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Saildate"
+              DTS:DTSID="{531D732A-8559-4F81-8A16-70A62C10BBA2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PortCallID"
+              DTS:DTSID="{793F0640-6A50-4810-8E5C-C52ADFECD5E3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FTP Connection Manager]"
+      DTS:CreationName="FTP"
+      DTS:DTSID="{B782416E-5E8E-4487-AE7C-DA5D5E284EA8}"
+      DTS:ObjectName="FTP Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="ftgauk.ihs.com:21">
+          <DTS:FtpConnection
+            DTS:ServerName="ftgauk.ihs.com"
+            DTS:ServerUserName="srv_maruk_tufton">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADHjJJ8qaBav9v29wDK8lOdAAAAAASAAACgAAAAEAAAAAPzJzvPooBBFlrmUdGHVeUoAAAAkvEdROFtvdYwryfAfeNaG0p2G9Ym5qHKcAi7E6yAgjG+NoYH/erKcxQAAAAlgi12AeCW5hbKCwwMO0oz8o7JgA</DTS:Property>
+          </DTS:FtpConnection>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[inbound]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{22C2F115-C30A-45C2-8E52-94F2B875B8C0}"
+      DTS:ObjectName="inbound">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="D:\mohit-test\inbound" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.integrations.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E03D186F-643B-48E6-B29D-BA1335C30F15}"
+      DTS:ObjectName="localhost.integrations.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=integrations;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-Package-{E03D186F-643B-48E6-B29D-BA1335C30F15}localhost.integrations.sa;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD+BF2Mse3WRKVL6prJ6njyAAAAAASAAACgAAAAEAAAAPjnhyz+aARzhd5zfbBQJ1IYAAAARmdbwCrypqBlgMQdB0oLqXkJoHCKgCyoFAAAAPoRmdUwnz9branMAlF6K8E3exyi</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8DAE4DF2-3CCC-47C7-8779-0A6E1E57E61B}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;archive\\&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="archiveFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">archive\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FF6BC86D-8FDE-4E6D-B5D6-038EB1E8E160}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::localRootFolder] +  @[User::cargoLocalFolder] +  @[User::archiveFolder]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="cargoArchiveFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\integrations\feeds\cargo\archive\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{70B32A99-8B70-44DD-A044-00026CDFB970}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::CargoFTPRootPath] + @[User::currDate]  + &quot;.zip&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="CargoFTPCompPath">
+      <DTS:VariableValue
+        DTS:DataType="8">/Cargo Carrying Ships_20170331.zip</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CC3242E2-712B-4E1B-9353-B6A2A221F471}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;/Cargo Carrying Ships_&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="CargoFTPRootPath">
+      <DTS:VariableValue
+        DTS:DataType="8">/Cargo Carrying Ships_</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AEFBB3EA-60C4-4378-B4F7-890E61B358A8}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::cargoProcessingFolder] +  @[User::currentFile]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="cargoFullProcessingPath">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\integrations\feeds\cargo\processing\201703100032_CargoCarryingShips.CSV</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{963696F4-434E-4B39-B09D-4F582FC3F210}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::localRootFolder] + @[User::cargoLocalFolder]  +  @[User::inboundFolder]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="cargoInbound">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\integrations\feeds\cargo\inbound\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C87F6211-05D1-4B37-97FB-2BFCCEC23023}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;cargo\\&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="cargoLocalFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">cargo\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DA8ECF0C-3C0E-4141-8D16-CE5A13D5B0C4}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::localRootFolder] +  @[User::cargoLocalFolder] +  @[User::processingFolder]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="cargoProcessingFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\integrations\feeds\cargo\processing\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F01C356D-CF99-4511-9DBC-432D03D04F0D}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::cargoProcessingFolder] +  @[User::tblCurrentFile]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="cargoTblFullProcPath">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\integrations\feeds\cargo\processing\201703100035_tblLastPortofCall.CSV</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C7AF4390-3CA4-4F34-9D6E-D9EDB9F7AD65}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;e &quot; + &quot;\&quot;&quot; + @[User::cargoInbound] +  @[User::CargoFTPCompPath] + &quot;\&quot;&quot; + &quot; -o&quot; +  @[User::cargoProcessingFolder] + &quot; -y&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="cargoUnzipExp">
+      <DTS:VariableValue
+        DTS:DataType="8">e "D:\integrations\feeds\cargo\inbound\/Cargo Carrying Ships_20170331.zip" -oD:\integrations\feeds\cargo\processing\ -y</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9739B0C2-7A31-42A5-8C71-FB23DD54433F}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="((DT_WSTR, 4) YEAR(GETDATE())) + (RIGHT(&quot;0&quot;+(DT_WSTR, 2) MONTH(GETDATE()) ,2)) +  (RIGHT(&quot;0&quot;+(DT_WSTR, 2) DAY(GETDATE()) ,2))"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="currDate">
+      <DTS:VariableValue
+        DTS:DataType="8">20170331</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D95A5ED1-18BE-4986-BB77-669002FDBF9F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="currentFile">
+      <DTS:VariableValue
+        DTS:DataType="8">201703100032_CargoCarryingShips.CSV</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4803FC4E-1F1B-4B10-8F94-404A79F0349B}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;inbound\\&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="inboundFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">inbound\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E2DB2AA0-5B61-47B3-A617-0EBA49C52EB3}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;D:\\integrations\\feeds\\&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="localRootFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\integrations\feeds\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5D0A2EE5-936F-4B77-BD86-CB4D0C99168A}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;processing\\&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="processingFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">processing\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A5666E10-F095-406E-B86B-391EC588C9A6}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="tblCurrentFile">
+      <DTS:VariableValue
+        DTS:DataType="8">201703100035_tblLastPortofCall.CSV</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Cargo-Carrying-Ships-Iterator"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{C9A2CADA-244D-4F1C-A013-3908FF0A44EC}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cargo-Carrying-Ships-Iterator">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="DTS.ForEachFileEnumerator.3"
+        DTS:DTSID="{526C0D27-235D-463E-9C23-9A85C7D75BEF}"
+        DTS:ObjectName="{526C0D27-235D-463E-9C23-9A85C7D75BEF}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::cargoProcessingFolder]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="D:\integrations\feeds\cargo\processing\" />
+            <FEFEProperty
+              FileSpec="*CargoCarryingShips.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="1" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main"
+          DTS:CreationName="SSIS.Pipeline.3"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{8BC3C43C-28F7-4EB9-B003-FA9AD0F763EE}"
+          DTS:ExecutableType="SSIS.Pipeline.3"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Flow Task- Cargo Main"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source"
+                  componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Cargo-CarryingShips-File-Mgnr]"
+                      connectionManagerRefId="Package.ConnectionManagers[Cargo-CarryingShips-File-Mgnr]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;LRIMOShipNo&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;LRIMOShipNo&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;LRIMOShipNo&quot;]"
+                          name="&quot;LRIMOShipNo&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Latitude&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Latitude&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Latitude&quot;]"
+                          name="&quot;Latitude&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Longitude&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Longitude&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Longitude&quot;]"
+                          name="&quot;Longitude&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipName&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipName&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipName&quot;]"
+                          name="&quot;ShipName&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipType&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipType&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipType&quot;]"
+                          name="&quot;ShipType&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Draught&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Draught&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Draught&quot;]"
+                          name="&quot;Draught&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Beam&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Beam&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Beam&quot;]"
+                          name="&quot;Beam&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Length&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Length&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Length&quot;]"
+                          name="&quot;Length&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;CallSign&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;CallSign&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;CallSign&quot;]"
+                          name="&quot;CallSign&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MMSI]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]"
+                          name="MMSI"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Speed&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Speed&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Speed&quot;]"
+                          name="&quot;Speed&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[Heading]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Heading]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[Heading]"
+                          name="Heading"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Destination&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Destination&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Destination&quot;]"
+                          name="&quot;Destination&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;DestinationTidied&quot;]"
+                          codePage="1252"
+                          dataType="text"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;DestinationTidied&quot;]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;DestinationTidied&quot;]"
+                          name="&quot;DestinationTidied&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ETA&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ETA&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ETA&quot;]"
+                          name="&quot;ETA&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;AdditionalInfo&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;AdditionalInfo&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;AdditionalInfo&quot;]"
+                          name="&quot;AdditionalInfo&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MovementDateTime&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MovementDateTime&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MovementDateTime&quot;]"
+                          name="&quot;MovementDateTime&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MovementID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MovementID]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MovementID]"
+                          name="MovementID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MoveStatus&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MoveStatus&quot;]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MoveStatus&quot;]"
+                          name="&quot;MoveStatus&quot;"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[TEU]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEU]"
+                          length="50"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[TEU]"
+                          name="TEU"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;LRIMOShipNo&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;LRIMOShipNo&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Latitude&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;Latitude&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Longitude&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;Longitude&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipName&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;ShipName&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ShipType&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;ShipType&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Draught&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;Draught&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Beam&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;Beam&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Length&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;Length&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;CallSign&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;CallSign&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MMSI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="MMSI" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Speed&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;Speed&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Heading]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Heading" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;Destination&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;Destination&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;DestinationTidied&quot;]"
+                          codePage="1252"
+                          dataType="text"
+                          name="&quot;DestinationTidied&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;ETA&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;ETA&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;AdditionalInfo&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;AdditionalInfo&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MovementDateTime&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;MovementDateTime&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MovementID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="MovementID" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;MoveStatus&quot;]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="&quot;MoveStatus&quot;" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEU]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TEU" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination"
+                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[T_STG_CARGO_CARRYING_SHIPS]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.integrations.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.integrations.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MMSI]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MMSI"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MMSI]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Heading]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Heading"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Heading]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[Heading]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MovementID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MovementID"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementID]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[MovementID]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TEU]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="TEU"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TEU]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[TEU]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;LRIMOShipNo&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;LRIMOShipNo&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRIMOShipNo]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;LRIMOShipNo&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Latitude&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;Latitude&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Latitude]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Latitude&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Longitude&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;Longitude&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Longitude]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Longitude&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;ShipName&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;ShipName&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipName]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipName&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;ShipType&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;ShipType&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipType]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ShipType&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Draught&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;Draught&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Draught]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Draught&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Beam&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;Beam&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Beam]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Beam&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Length&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;Length&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Length]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Length&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;CallSign&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;CallSign&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CallSign]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;CallSign&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Speed&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;Speed&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Speed]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Speed&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;Destination&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;Destination&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Destination]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;Destination&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;AdditionalInfo&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;AdditionalInfo&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AdditionalInfo]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;AdditionalInfo&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;MovementDateTime&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;MovementDateTime&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementDateTime]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MovementDateTime&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;MoveStatus&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;MoveStatus&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveStatus]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;MoveStatus&quot;]" />
+                        <inputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;ETA&quot;]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="&quot;ETA&quot;"
+                          externalMetadataColumnId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ETA]"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;ETA&quot;]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MMSI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="MMSI" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Heading]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Heading" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="MovementID" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TEU]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="TEU" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRIMOShipNo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="LRIMOShipNo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Latitude]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Latitude" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Longitude]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Longitude" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="ShipName" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipType]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="ShipType" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Draught]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Draught" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Beam]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Beam" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Length]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Length" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CallSign]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="CallSign" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Speed]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Speed" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Destination]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Destination" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DestinationTidied]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="DestinationTidied" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ETA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="ETA" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AdditionalInfo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="AdditionalInfo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MovementDateTime]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="MovementDateTime" />
+                        <externalMetadataColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MoveStatus]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="MoveStatus" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main.Paths[Flat File Source Output]"
+                  endId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Cargo-Carrying-Ships-Iterator\Execute SQL - Cargo Main"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{2D609F0B-BDFE-44B0-A82F-7F841403834A}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL - Cargo Main"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E03D186F-643B-48E6-B29D-BA1335C30F15}"
+              SQLTask:SqlStatementSource="EXECUTE sp_Cargo_carrying_ship_processing ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::cargoFullProcessingPath"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="130"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Cargo-Carrying-Ships-Iterator\File System Task - Cargo Main"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="File System Task"
+          DTS:DTSID="{F876B8CB-D30F-4A8F-9999-2A91A1EACA1D}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="File System Task - Cargo Main"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="MoveFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="{16C2C0FB-CA0E-4D0B-A802-47F0805FB844}"
+              TaskDestinationPath="User::cargoArchiveFolder"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Cargo-Carrying-Ships-Iterator.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{9878181F-5DA9-484E-A76F-3770F17712ED}"
+          DTS:From="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Cargo-Carrying-Ships-Iterator\Execute SQL - Cargo Main" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Cargo-Carrying-Ships-Iterator.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{70F6DCD8-E76B-47C6-A568-05759F7073DC}"
+          DTS:From="Package\Cargo-Carrying-Ships-Iterator\Execute SQL - Cargo Main"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Cargo-Carrying-Ships-Iterator\File System Task - Cargo Main"
+          DTS:Value="2" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{DA677CB0-E04D-48DF-8C7B-2BD6AC7E9AF1}"
+          DTS:ObjectName="{DA677CB0-E04D-48DF-8C7B-2BD6AC7E9AF1}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::currentFile" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute Process Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.ExecuteProcess, Microsoft.SqlServer.ExecProcTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{1BDFE8CE-E2AE-4B02-8C52-E1287937175E}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.ExecuteProcess, Microsoft.SqlServer.ExecProcTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Process Task"
+      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">@[User::cargoUnzipExp]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="WorkingDirectory">@[User::cargoProcessingFolder]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\7-Zip\7z.exe"
+          Arguments="e &quot;D:\integrations\feeds\cargo\inbound\/Cargo Carrying Ships_20170331.zip&quot; -oD:\integrations\feeds\cargo\processing\ -y"
+          WorkingDirectory="D:\integrations\feeds\cargo\processing\" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\FTP Task - Cargo"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FtpTask.FtpTask, Microsoft.SqlServer.FtpTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="FTP Task"
+      DTS:DTSID="{22D558EF-519F-4F02-B529-35AEF29785F8}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FtpTask.FtpTask, Microsoft.SqlServer.FtpTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FTP Task - Cargo"
+      DTS:TaskContact="FTP Task; Microsoft Corporation; SQL Server 2012; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FtpData
+          ConnectionName="{B782416E-5E8E-4487-AE7C-DA5D5E284EA8}"
+          TaskOperationType="Receive"
+          TaskIsLocalPathVar="True"
+          TaskLocalPath="User::cargoInbound"
+          TaskIsRemotePathVar="True"
+          TaskRemotePath="User::CargoFTPCompPath" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\tblLastPortofCall-Iterator"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{45DEE7BF-96C3-4DBD-8948-0D74B0BAC3F8}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="tblLastPortofCall-Iterator">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="DTS.ForEachFileEnumerator.3"
+        DTS:DTSID="{5A656D2D-7F3E-40E1-B232-4594A0BB3862}"
+        DTS:ObjectName="{5A656D2D-7F3E-40E1-B232-4594A0BB3862}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::cargoProcessingFolder]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="D:\integrations\feeds\cargo\processing\" />
+            <FEFEProperty
+              FileSpec="*tblLastPortofCall.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="1" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl"
+          DTS:CreationName="SSIS.Pipeline.3"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{E48C8A58-2BB1-4F9C-B3EE-D284CA9FCD12}"
+          DTS:ExecutableType="SSIS.Pipeline.3"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Flow Task- Cargo Tbl"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source"
+                  componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[cargo-tblLastPort-ConnectionMgnr]"
+                      connectionManagerRefId="Package.ConnectionManagers[cargo-tblLastPort-ConnectionMgnr]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MMSI]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]"
+                          name="MMSI"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LRNO]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]"
+                          name="LRNO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Port_ID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Port_ID]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Port_ID]"
+                          name="Port_ID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[CountryCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CountryCode]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[CountryCode]"
+                          name="CountryCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                          name="Country"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LastPortofCall]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LastPortofCall]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LastPortofCall]"
+                          name="LastPortofCall"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ArrDate]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ArrDate]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ArrDate]"
+                          name="ArrDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Saildate]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Saildate]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Saildate]"
+                          name="Saildate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[PortCallID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PortCallID]"
+                          length="50"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[PortCallID]"
+                          name="PortCallID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MMSI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="MMSI" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LRNO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="LRNO" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Port_ID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Port_ID" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CountryCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CountryCode" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LastPortofCall]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="LastPortofCall" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ArrDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ArrDate" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Saildate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Saildate" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PortCallID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PortCallID" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination"
+                  componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[T_STG_CARGO_TBL_LAST_PORT_OF_CALL]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.integrations.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.integrations.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MMSI]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="MMSI"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MMSI]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[MMSI]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LRNO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="LRNO"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRNO]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Port_ID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Port_ID"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Port_ID]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Port_ID]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CountryCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CountryCode"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CountryCode]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[CountryCode]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Country"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LastPortofCall]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="LastPortofCall"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastPortOfCall]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LastPortofCall]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ArrDate]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ArrDate"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ArrDate]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ArrDate]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Saildate]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Saildate"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SailDate]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Saildate]" />
+                        <inputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PortCallID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="PortCallID"
+                          externalMetadataColumnId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PortCallId]"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[PortCallID]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MMSI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="MMSI" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRNO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="LRNO" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Port_ID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Port_ID" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CountryCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="CountryCode" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastPortOfCall]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="LastPortOfCall" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ArrDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="ArrDate" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SailDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="SailDate" />
+                        <externalMetadataColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PortCallId]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="PortCallId" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl.Paths[Flat File Source Output]"
+                  endId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\tblLastPortofCall-Iterator\Execute SQL Task- Cargo Tbl"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{DB64B62E-4D65-4217-A43D-C690E6D5582D}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task- Cargo Tbl"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E03D186F-643B-48E6-B29D-BA1335C30F15}"
+              SQLTask:SqlStatementSource="EXECUTE sp_Cargo_tbl_processing ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::cargoTblFullProcPath"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\tblLastPortofCall-Iterator\File System Task - Cargo Tbl"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="File System Task"
+          DTS:DTSID="{AEE8DC28-834C-44E7-B19F-2C1FFEAF31AC}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="File System Task - Cargo Tbl"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="MoveFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="{83F88531-705A-41A2-BD1E-8983CACB8137}"
+              TaskDestinationPath="User::cargoArchiveFolder"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{E32756E7-7CC1-4362-91FD-4A9FC1515120}"
+          DTS:From="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\tblLastPortofCall-Iterator\Execute SQL Task- Cargo Tbl" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{07C60DF5-756F-4734-9E5F-75A624C3763A}"
+          DTS:From="Package\tblLastPortofCall-Iterator\Execute SQL Task- Cargo Tbl"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\tblLastPortofCall-Iterator\File System Task - Cargo Tbl" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{6E7A3F21-C7B3-4DB9-AF06-5487BE389C10}"
+          DTS:ObjectName="{6E7A3F21-C7B3-4DB9-AF06-5487BE389C10}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::tblCurrentFile" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{C9C1A9EE-7B6A-41B9-A934-57D742E3F8B0}"
+      DTS:From="Package\FTP Task - Cargo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Execute Process Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{4309AD04-E677-4269-A862-776B43C71A80}"
+      DTS:From="Package\Execute Process Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Cargo-Carrying-Ships-Iterator" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{1EF87F07-6526-477B-A4E0-FCB10102D877}"
+      DTS:From="Package\Cargo-Carrying-Ships-Iterator"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\tblLastPortofCall-Iterator" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="214,42"
+          Id="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main"
+          TopLeft="48,22" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Cargo-Carrying-Ships-Iterator\Execute SQL - Cargo Main"
+          TopLeft="47,98" />
+        <NodeLayout
+          Size="223,42"
+          Id="Package\Cargo-Carrying-Ships-Iterator\File System Task - Cargo Main"
+          TopLeft="48,183" />
+        <EdgeLayout
+          Id="Package\Cargo-Carrying-Ships-Iterator.PrecedenceConstraints[Constraint]"
+          TopLeft="127,64">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34"
+              Start="0,0"
+              End="0,26.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargo-Carrying-Ships-Iterator.PrecedenceConstraints[Constraint 1]"
+          TopLeft="149,140">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10.5,43"
+              Start="0,0"
+              End="10.5,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5"
+                    Point2="0,21.5"
+                    Point3="4,21.5" />
+                  <mssgle:LineSegment
+                    End="6.5,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.5,21.5"
+                    Point2="10.5,21.5"
+                    Point3="10.5,25.5" />
+                  <mssgle:LineSegment
+                    End="10.5,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-20.054453125,26.5,50.60890625,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="276,280"
+          Size="276,323"
+          Id="Package\Cargo-Carrying-Ships-Iterator"
+          TopLeft="447,19" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Execute Process Task"
+          TopLeft="221,70" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\FTP Task - Cargo"
+          TopLeft="26,67" />
+        <NodeLayout
+          Size="206,42"
+          Id="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl"
+          TopLeft="50,12" />
+        <NodeLayout
+          Size="218,42"
+          Id="Package\tblLastPortofCall-Iterator\Execute SQL Task- Cargo Tbl"
+          TopLeft="48,88" />
+        <NodeLayout
+          Size="216,42"
+          Id="Package\tblLastPortofCall-Iterator\File System Task - Cargo Tbl"
+          TopLeft="43,166" />
+        <EdgeLayout
+          Id="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint]"
+          TopLeft="128.5,54">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34"
+              Start="0,0"
+              End="0,26.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint 1]"
+          TopLeft="154,130">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="277,269"
+          Size="277,312"
+          Id="Package\tblLastPortofCall-Iterator"
+          TopLeft="799,20" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="188,89.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="33,0"
+              Start="0,0"
+              End="25.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="25.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="403,91">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44,89.5"
+              Start="0,0"
+              End="36.5,89.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18,0"
+                    Point2="22,0"
+                    Point3="22,4" />
+                  <mssgle:LineSegment
+                    End="22,85.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22,85.5"
+                    Point2="22,89.5"
+                    Point3="26,89.5" />
+                  <mssgle:LineSegment
+                    End="36.5,89.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="723,178.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="76,0"
+              Start="0,0"
+              End="68.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="68.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\Flat File Source"
+          TopLeft="10,44" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination"
+          TopLeft="226,45" />
+        <EdgeLayout
+          Id="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main.Paths[Flat File Source Output]"
+          TopLeft="163,65.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="63,0"
+              Start="0,0"
+              End="55.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="55.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargo-Carrying-Ships-Iterator\Data Flow Task- Cargo Main\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="173,42"
+          Id="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination"
+          TopLeft="302,65" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\Flat File Source"
+          TopLeft="53,61" />
+        <EdgeLayout
+          Id="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl.Paths[Flat File Source Output]"
+          TopLeft="206,84">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96,0"
+              Start="0,0"
+              End="88.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="88.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\tblLastPortofCall-Iterator\Data Flow Task- Cargo Tbl\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

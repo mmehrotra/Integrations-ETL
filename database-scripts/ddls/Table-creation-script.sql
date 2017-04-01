@@ -64,6 +64,7 @@ CREATE TABLE [T_CARGO_CARRYING_SHIP] (
 
 -- Staging table for Cargo's TblLastPortOfCall
 -- TRUNCATE TABLE [T_STG_CARGO_TBL_LAST_PORT_OF_CALL];
+-- DROP TABLE [T_STG_CARGO_TBL_LAST_PORT_OF_CALL]
 CREATE TABLE [T_STG_CARGO_TBL_LAST_PORT_OF_CALL] (
     [MMSI] varchar(255),
     [LRNO] varchar(255),
@@ -81,6 +82,94 @@ CREATE TABLE [T_STG_CARGO_TBL_LAST_PORT_OF_CALL] (
 -- SELECT * FROM T_CARGO_TBL_LAST_PORT_OF_CALL
 -- Main table for Cargo's TblLastPortOfCall
 CREATE TABLE [T_CARGO_TBL_LAST_PORT_OF_CALL] (
+    [ID] bigint IDENTITY(1,1) PRIMARY KEY,
+    [MMSI] bigint,
+    [LRNO] bigint,
+    [Port_ID] bigint,
+    [CountryCode] varchar(255),
+    [Country] varchar(255),
+    [LastPortOfCall] varchar(255),
+    [ArrDate] DATETIME,
+    [SailDate] DATETIME,
+    [PortCallId] BIGINT,
+    [REC_CREATION_TIME] DATETIME,
+    [REC_CREATED_BY] VARCHAR(255),
+    [REC_UPDATED_TIME] DATETIME,
+    [REC_UPDATED_BY] VARCHAR(255),
+    [SOURCE_FILE_NAME] VARCHAR(255)   
+);
+
+-- OFFSHORE TABLES 
+---------------------------------------------------------------------------
+
+
+-- DROP TABLE [T_STG_OFFSHORE_MISC];
+-- TRUNCATE TABLE T_STG_OFFSHORE_MISC;
+-- SELECT * FROM [T_STG_OFFSHORE_MISC];
+-- Script for creation of staging table for offshore misc
+-- TODO :: create the primary key and other constraints
+CREATE TABLE [T_STG_OFFSHORE_MISC] (
+    [LRIMOShipNo] varchar(255),
+    [Latitude] varchar(255),
+    [Longitude] varchar(255),
+    [ShipName] varchar(255),
+    [ShipType] varchar(255),
+    [Draught] varchar(255),
+    [Beam] varchar(255),
+    [Length] varchar(255),
+    [CallSign] varchar(255),
+    [MMSI] varchar(255),
+    [Speed] varchar(255),
+    [Heading] varchar(255),
+    [Destination] varchar(255),
+    [DestinationTidied] varchar(255),
+    [ETA] varchar(255),
+    [AdditionalInfo] varchar(255),
+    [MovementDateTime] varchar(255),
+    [MovementID] varchar(255),
+    [MoveStatus] varchar(255),
+    [TEU] varchar(255)
+);
+
+-- DROP TABLE T_OFFSHORE_MISC;
+-- TRUNCATE TABLE T_OFFSHORE_MISC;
+-- SELECT * FROM T_OFFSHORE_MISC;
+-- Script for creation of the main tables
+-- TODO :: create the primary key and other constraints
+CREATE TABLE [T_OFFSHORE_MISC] (
+	[ID] bigint IDENTITY(1,1) PRIMARY KEY,
+    [LRIMOShipNo] bigint,
+    [Latitude] float,
+    [Longitude] float,
+    [ShipName] varchar(255),
+    [ShipType] varchar(255),
+    [Draught] float,
+    [Beam] float,
+    [Length] float,
+    [CallSign] varchar(255),
+    [MMSI] bigint,
+    [Speed] float,
+    [Heading] float,
+    [Destination] varchar(255),
+    [DestinationTidied] varchar(255),
+    [ETA] DATETIME,
+    [AdditionalInfo] varchar(255),
+    [MovementDateTime] DATETIME,
+    [MovementID] bigint,
+    [MoveStatus] varchar(255),
+    [TEU] varchar(255),
+    [REC_CREATION_TIME] DATETIME,
+    [REC_CREATED_BY] VARCHAR(255),
+    [REC_UPDATED_TIME] DATETIME,
+    [REC_UPDATED_BY] VARCHAR(255),
+    [SOURCE_FILE_NAME] VARCHAR(255)
+);
+
+-- Staging table for Cargo's TblLastPortOfCall
+-- TRUNCATE TABLE [T_STG_OFFSHORE_TBL_LAST_PORT_OF_CALL];
+-- SELECT * FROM T_STG_OFFSHORE_TBL_LAST_PORT_OF_CALL
+-- DROP TABLE [T_STG_OFFSHORE_TBL_LAST_PORT_OF_CALL]
+CREATE TABLE [T_STG_OFFSHORE_TBL_LAST_PORT_OF_CALL] (
     [MMSI] varchar(255),
     [LRNO] varchar(255),
     [Port_ID] varchar(255),
@@ -89,7 +178,24 @@ CREATE TABLE [T_CARGO_TBL_LAST_PORT_OF_CALL] (
     [LastPortOfCall] varchar(255),
     [ArrDate] varchar(255),
     [SailDate] varchar(255),
-    [PortCallId] varchar(255),
+    [PortCallId] varchar(255)   
+);
+
+-- DROP TABLE [T_OFFSHORE_TBL_LAST_PORT_OF_CALL]
+-- TRUNCATE TABLE T_OFFSHORE_TBL_LAST_PORT_OF_CALL
+-- SELECT * FROM T_OFFSHORE_TBL_LAST_PORT_OF_CALL
+-- Main table for Offshore's TblLastPortOfCall
+CREATE TABLE [T_OFFSHORE_TBL_LAST_PORT_OF_CALL] (
+    [ID] bigint IDENTITY(1,1) PRIMARY KEY,
+    [MMSI] bigint,
+    [LRNO] bigint,
+    [Port_ID] bigint,
+    [CountryCode] varchar(255),
+    [Country] varchar(255),
+    [LastPortOfCall] varchar(255),
+    [ArrDate] DATETIME,
+    [SailDate] DATETIME,
+    [PortCallId] BIGINT,
     [REC_CREATION_TIME] DATETIME,
     [REC_CREATED_BY] VARCHAR(255),
     [REC_UPDATED_TIME] DATETIME,
