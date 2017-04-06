@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Offshore-package"
   DTS:PackageType="5"
-  DTS:VersionBuild="54"
-  DTS:VersionGUID="{08E919A0-29B9-4CAF-A4D0-7C0BC14A6D12}">
+  DTS:VersionBuild="60"
+  DTS:VersionGUID="{AA9C1B9E-337B-4014-A382-FC9D39999350}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABJeS6Qc1WjRoOVxkPq26SVAAAAAASAAACgAAAAEAAAAIl9fhgijIYTbnqF71auzpIoAAAARpCsAwiBGnfZ+6M0IC9lXpBnnlnD/kQGfXhQVb1qtAUxv0xEMmSADxQAAADWDCjT/HCEgiuPKPoxJF0ajDuRZA</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACk6yTDv3SfPAENac+xmaxrAAAAAASAAACgAAAAEAAAAEML6aTE0V9dlQK2Xj0ereMoAAAAiQ/ZoQxAXdhV/8VjRBz5z8EJsG1taWV6XrsfjFolT52H+ZUTWGwMLhQAAAAmlZdTfiwqnKgCLCUanKa62tnfuA</DTS:Property>
           </DTS:FtpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -57,7 +57,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACwQhS6FCwO81+AxW+PKQWFAAAAAASAAACgAAAAEAAAAKlwA6EtmToX7Vnpc4GxRZcYAAAAd699zdbeUDCZuTZLVHgFqrJGAZNC8Uu+FAAAAIc14cpTxcrh+HjJEzQsTY3ATSzk</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADK7nhWgSiVqrFLe8j+x2C1AAAAAASAAACgAAAAEAAAANQ6Tzxmu5QBstbAF/PnmrwYAAAAxgqdtIuesiSWd6C7gibFovU/h7hvWJjIFAAAAHn2uKB6JrHkaND1OJDVZQcdwgWM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1655,7 +1655,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{B004B917-EB7D-40F7-A627-B7A989B59DA0}"
-              SQLTask:SqlStatementSource="EXECUTE sp_Offshore_carrying_ship_processing ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              SQLTask:SqlStatementSource="EXECUTE sp_offshore_misc_processing ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
                 SQLTask:DtsVariableName="User::offshoreFullProcessingPath"
@@ -2430,7 +2430,7 @@
           Id="Package\Execute Process Task"
           TopLeft="221,70" />
         <NodeLayout
-          Size="162,42"
+          Size="175,42"
           Id="Package\FTP Task - Offshore"
           TopLeft="26,67" />
         <NodeLayout
@@ -2563,18 +2563,30 @@
           TopLeft="799,20" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="188,89.5">
+          TopLeft="113.5,67">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="33,0"
+              EndConnector="198.5,3"
               Start="0,0"
-              End="25.5,0">
+              End="198.5,-4.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="25.5,0" />
+                    End="0,-18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-18.5"
+                    Point2="0,-22.5"
+                    Point3="4,-22.5" />
+                  <mssgle:LineSegment
+                    End="194.5,-22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="194.5,-22.5"
+                    Point2="198.5,-22.5"
+                    Point3="198.5,-18.5" />
+                  <mssgle:LineSegment
+                    End="198.5,-4.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
