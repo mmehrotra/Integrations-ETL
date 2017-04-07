@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ShipData-package"
   DTS:PackageType="5"
-  DTS:VersionBuild="96"
-  DTS:VersionGUID="{A64EB83C-5743-44CB-BEE1-DB3CF7BA0262}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{3B731CC4-F81E-4CE1-9DDB-97CE7E9B83FE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABY8gDJxgE+xsaGR5S3t6Z7AAAAAASAAACgAAAAEAAAACcuxeh//loDGinwXV581kMoAAAAOv5eBN/seA+ogg47S/qg/DFJh/B6Mj9cHfTNpsLSjE343sJhPfV/RxQAAAA9kHM1SnnY3I2jt/RaK3n8P0bvkA</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD1wMEERiJf7UTySugiWOb+AAAAAASAAACgAAAAEAAAAAxG17vC+gaHNNpSDD7USs0oAAAAp4LPz5AvNaZwBaztKV5mg2ygt+LFApvmyJdirwyCHKzsaGxyPUrFQxQAAACQ0ncRn0ZWvjrRw/c74+t5EzF2wQ</DTS:Property>
           </DTS:FtpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADbK/SSaz4jxfDTNIm0lEj2AAAAAASAAACgAAAAEAAAANz4Zfj55rzou1xQNBrcZtEYAAAAAgFZudx3ylgWlJpgThPh7pZ6nH944twWFAAAAPAzU9qZfacnLNv26D6rDvX0EVF+</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACPOuf1VQrDMI2Yi+gs6tb+AAAAAASAAACgAAAAEAAAAE0dVzu+04RmsItCh+l73jsYAAAA9EseO+XoBD0K7WTnrAN2CRsRYzXxedNNFAAAAECYn8SGYgJKeEDttw2rb5YLAX77</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -4858,13 +4858,13 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl"
+          DTS:refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd"
           DTS:CreationName="SSIS.Pipeline.3"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{236ede89-063e-432a-9663-ed77e934059a}"
           DTS:ExecutableType="SSIS.Pipeline.3"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Data Flow Task- ShipData Tbl"
+          DTS:ObjectName="Data Flow Task- ShipTypeCd"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
           <DTS:ObjectData>
@@ -4872,7 +4872,7 @@
               version="1">
               <components>
                 <component
-                  refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source"
+                  refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source"
                   componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
                   contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Flat File Source"
@@ -4892,25 +4892,25 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Connections[FlatFileConnection]"
+                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Connections[FlatFileConnection]"
                       connectionManagerID="Package.ConnectionManagers[shipData-tblshipTypeCodes]"
                       connectionManagerRefId="Package.ConnectionManagers[shipData-tblshipTypeCodes]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output]"
+                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output]"
                       name="Flat File Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel5]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel5]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShiptypeLevel5]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShiptypeLevel5]"
                           length="255"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel5]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel5]"
                           name="ShiptypeLevel5"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -4925,14 +4925,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[StatCode5]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[StatCode5]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StatCode5]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StatCode5]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[StatCode5]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[StatCode5]"
                           name="StatCode5"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -4947,14 +4947,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Level4Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[Level4Code]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level4Code]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level4Code]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Level4Code]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[Level4Code]"
                           name="Level4Code"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -4969,14 +4969,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel4]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel4]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel4]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel4]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel4]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel4]"
                           name="ShipTypeLevel4"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -4991,14 +4991,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Level3Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[Level3Code]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level3Code]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level3Code]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Level3Code]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[Level3Code]"
                           name="Level3Code"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5013,14 +5013,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel3]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel3]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel3]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel3]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel3]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel3]"
                           name="ShipTypeLevel3"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5035,14 +5035,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Level2Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[Level2Code]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level2Code]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level2Code]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Level2Code]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[Level2Code]"
                           name="Level2Code"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5057,14 +5057,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel2]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel2]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel2]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel2]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel2]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel2]"
                           name="ShipTypeLevel2"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5079,14 +5079,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel1Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel1Code]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel1Code]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel1Code]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel1Code]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel1Code]"
                           name="ShipTypeLevel1Code"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5101,14 +5101,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel1]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel1]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShiptypeLevel1]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShiptypeLevel1]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel1]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel1]"
                           name="ShiptypeLevel1"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5123,14 +5123,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[HullType]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[HullType]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HullType]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HullType]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[HullType]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[HullType]"
                           name="HullType"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5145,14 +5145,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroup]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroup]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubGroup]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubGroup]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroup]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroup]"
                           name="SubGroup"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5167,14 +5167,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubType]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubType]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubType]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubType]"
                           length="255"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubType]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubType]"
                           name="SubType"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5189,14 +5189,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[HullTypeCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[HullTypeCode]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HullTypeCode]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HullTypeCode]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[HullTypeCode]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[HullTypeCode]"
                           name="HullTypeCode"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5211,14 +5211,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroupCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroupCode]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubGroupCode]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubGroupCode]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroupCode]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroupCode]"
                           name="SubGroupCode"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5233,14 +5233,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubTypeCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubTypeCode]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubTypeCode]"
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubTypeCode]"
                           length="50"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubTypeCode]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubTypeCode]"
                           name="SubTypeCode"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5258,97 +5258,97 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShiptypeLevel5]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShiptypeLevel5]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="ShiptypeLevel5" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StatCode5]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[StatCode5]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="StatCode5" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level4Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level4Code]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Level4Code" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel4]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel4]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="ShipTypeLevel4" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level3Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level3Code]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Level3Code" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel3]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel3]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="ShipTypeLevel3" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level2Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Level2Code]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Level2Code" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel2]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel2]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="ShipTypeLevel2" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel1Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShipTypeLevel1Code]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="ShipTypeLevel1Code" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShiptypeLevel1]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ShiptypeLevel1]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="ShiptypeLevel1" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HullType]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HullType]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="HullType" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubGroup]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubGroup]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="SubGroup" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubType]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubType]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="SubType" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HullTypeCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HullTypeCode]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="HullTypeCode" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubGroupCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubGroupCode]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="SubGroupCode" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubTypeCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubTypeCode]"
                           codePage="1252"
                           dataType="str"
                           length="50"
@@ -5356,27 +5356,27 @@
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output]"
+                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Error Output]"
                       isErrorOut="true"
                       name="Flat File Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           codePage="1252"
                           dataType="text"
                           description="Flat File Source Error Output Column"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           name="Flat File Source Error Output Column" />
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -5385,7 +5385,7 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination"
+                  refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination"
                   componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
@@ -5442,7 +5442,7 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Connections[OleDbConnection]"
+                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[localhost.integrations.sa]"
                       connectionManagerRefId="Package.ConnectionManagers[localhost.integrations.sa]"
                       description="The OLE DB runtime connection used to access the database."
@@ -5450,235 +5450,235 @@
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShiptypeLevel5]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShiptypeLevel5]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="ShiptypeLevel5"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShiptypeLevel5]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel5]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShiptypeLevel5]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel5]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StatCode5]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StatCode5]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="StatCode5"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatCode5]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[StatCode5]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatCode5]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[StatCode5]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Level4Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Level4Code]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Level4Code"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level4Code]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Level4Code]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level4Code]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[Level4Code]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipTypeLevel4]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipTypeLevel4]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ShipTypeLevel4"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel4]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel4]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel4]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel4]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Level3Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Level3Code]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Level3Code"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level3Code]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Level3Code]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level3Code]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[Level3Code]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipTypeLevel3]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipTypeLevel3]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ShipTypeLevel3"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel3]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel3]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel3]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel3]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Level2Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Level2Code]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Level2Code"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level2Code]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Level2Code]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level2Code]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[Level2Code]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipTypeLevel2]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipTypeLevel2]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ShipTypeLevel2"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel2]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel2]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel2]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel2]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipTypeLevel1Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShipTypeLevel1Code]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ShipTypeLevel1Code"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel1Code]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel1Code]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel1Code]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShipTypeLevel1Code]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShiptypeLevel1]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ShiptypeLevel1]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ShiptypeLevel1"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShiptypeLevel1]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel1]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShiptypeLevel1]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[ShiptypeLevel1]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HullType]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HullType]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="HullType"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HullType]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[HullType]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HullType]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[HullType]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SubGroup]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SubGroup]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="SubGroup"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubGroup]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroup]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubGroup]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroup]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SubType]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SubType]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="SubType"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubType]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubType]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubType]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubType]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HullTypeCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HullTypeCode]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="HullTypeCode"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HullTypeCode]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[HullTypeCode]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HullTypeCode]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[HullTypeCode]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SubGroupCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SubGroupCode]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="SubGroupCode"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubGroupCode]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroupCode]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubGroupCode]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubGroupCode]" />
                         <inputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SubTypeCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SubTypeCode]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="SubTypeCode"
-                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubTypeCode]"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SubTypeCode]" />
+                          externalMetadataColumnId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubTypeCode]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output].Columns[SubTypeCode]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatCode5]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatCode5]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="StatCode5" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShiptypeLevel5]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShiptypeLevel5]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="ShiptypeLevel5" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level4Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level4Code]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Level4Code" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel4]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel4]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="ShipTypeLevel4" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level3Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level3Code]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Level3Code" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel3]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel3]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="ShipTypeLevel3" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level2Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Level2Code]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Level2Code" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel2]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel2]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="ShipTypeLevel2" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel1Code]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipTypeLevel1Code]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="ShipTypeLevel1Code" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShiptypeLevel1]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShiptypeLevel1]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="ShiptypeLevel1" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HullType]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HullType]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="HullType" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubGroup]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubGroup]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="SubGroup" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubType]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubType]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="SubType" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HullTypeCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HullTypeCode]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="HullTypeCode" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubGroupCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubGroupCode]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="SubGroupCode" />
                         <externalMetadataColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubTypeCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubTypeCode]"
                           codePage="1252"
                           dataType="str"
                           length="255"
@@ -5688,22 +5688,22 @@
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      synchronousInputId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -5714,22 +5714,22 @@
               </components>
               <paths>
                 <path
-                  refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl.Paths[Flat File Source Output]"
-                  endId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd.Paths[Flat File Source Output]"
+                  endId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   name="Flat File Source Output"
-                  startId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output]" />
+                  startId="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source.Outputs[Flat File Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\tbl-ShipTypCd-Iterator\Execute SQL Task- ShipData Tbl"
+          DTS:refId="Package\tbl-ShipTypCd-Iterator\Execute SQL Task- ShipTypeCd"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="Execute SQL Task"
           DTS:DTSID="{e371c8be-c63b-473e-af29-3ae2fa438d43}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Execute SQL Task- ShipData Tbl"
+          DTS:ObjectName="Execute SQL Task- ShipTypeCd"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
@@ -5747,13 +5747,13 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\tbl-ShipTypCd-Iterator\File System Task - ShipData Tbl"
+          DTS:refId="Package\tbl-ShipTypCd-Iterator\File System Task - ShipTypeCd"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="File System Task"
           DTS:DTSID="{f60c3601-c960-445a-abb3-148d9924a181}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
-          DTS:ObjectName="File System Task - ShipData Tbl"
+          DTS:ObjectName="File System Task - ShipTypeCd"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
@@ -5772,18 +5772,18 @@
           DTS:refId="Package\tbl-ShipTypCd-Iterator.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
           DTS:DTSID="{f929c7ef-2a31-4d7c-86ea-cb07032a3f67}"
-          DTS:From="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl"
+          DTS:From="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
-          DTS:To="Package\tbl-ShipTypCd-Iterator\Execute SQL Task- ShipData Tbl" />
+          DTS:To="Package\tbl-ShipTypCd-Iterator\Execute SQL Task- ShipTypeCd" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\tbl-ShipTypCd-Iterator.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
           DTS:DTSID="{1e3fbe87-6706-40e4-b77c-fefc569889a9}"
-          DTS:From="Package\tbl-ShipTypCd-Iterator\Execute SQL Task- ShipData Tbl"
+          DTS:From="Package\tbl-ShipTypCd-Iterator\Execute SQL Task- ShipTypeCd"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
-          DTS:To="Package\tbl-ShipTypCd-Iterator\File System Task - ShipData Tbl" />
+          DTS:To="Package\tbl-ShipTypCd-Iterator\File System Task - ShipTypeCd" />
       </DTS:PrecedenceConstraints>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
@@ -5824,13 +5824,13 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl"
+          DTS:refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat"
           DTS:CreationName="SSIS.Pipeline.3"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{8f44bbcc-a515-4f94-945f-c0d3b2149e67}"
           DTS:ExecutableType="SSIS.Pipeline.3"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Data Flow Task- ShipData Tbl"
+          DTS:ObjectName="Data Flow Task- SplFeat"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
           <DTS:ObjectData>
@@ -5838,7 +5838,7 @@
               version="1">
               <components>
                 <component
-                  refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source"
+                  refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source"
                   componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
                   contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Flat File Source"
@@ -5858,25 +5858,25 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Connections[FlatFileConnection]"
+                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Connections[FlatFileConnection]"
                       connectionManagerID="Package.ConnectionManagers[shipData-tblSpecialFeatures]"
                       connectionManagerRefId="Package.ConnectionManagers[shipData-tblSpecialFeatures]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output]"
+                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output]"
                       name="Flat File Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LRNO]"
+                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LRNO]"
                           length="50"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]"
                           name="LRNO"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5891,14 +5891,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Sequence]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[Sequence]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sequence]"
+                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sequence]"
                           length="50"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Sequence]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[Sequence]"
                           name="Sequence"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5913,14 +5913,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeature]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeature]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SpecialFeature]"
+                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SpecialFeature]"
                           length="50"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeature]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeature]"
                           name="SpecialFeature"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5935,14 +5935,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeatureCode]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeatureCode]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SpecialFeatureCode]"
+                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SpecialFeatureCode]"
                           length="50"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeatureCode]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeatureCode]"
                           name="SpecialFeatureCode"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -5960,25 +5960,25 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LRNO]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LRNO]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="LRNO" />
                         <externalMetadataColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sequence]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sequence]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Sequence" />
                         <externalMetadataColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SpecialFeature]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SpecialFeature]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="SpecialFeature" />
                         <externalMetadataColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SpecialFeatureCode]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SpecialFeatureCode]"
                           codePage="1252"
                           dataType="str"
                           length="50"
@@ -5986,27 +5986,27 @@
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output]"
+                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Error Output]"
                       isErrorOut="true"
                       name="Flat File Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           codePage="1252"
                           dataType="text"
                           description="Flat File Source Error Output Column"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           name="Flat File Source Error Output Column" />
                         <outputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -6015,7 +6015,7 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination"
+                  refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination"
                   componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                   description="OLE DB Destination"
@@ -6072,7 +6072,7 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Connections[OleDbConnection]"
+                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="Package.ConnectionManagers[localhost.integrations.sa]"
                       connectionManagerRefId="Package.ConnectionManagers[localhost.integrations.sa]"
                       description="The OLE DB runtime connection used to access the database."
@@ -6080,67 +6080,67 @@
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
                       errorRowDisposition="FailComponent"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LRNO]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LRNO]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="LRNO"
-                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRNO]"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]" />
+                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRNO]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[LRNO]" />
                         <inputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sequence]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sequence]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Sequence"
-                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sequence]"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Sequence]" />
+                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sequence]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[Sequence]" />
                         <inputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SpecialFeature]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SpecialFeature]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="SpecialFeature"
-                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SpecialFeature]"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeature]" />
+                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SpecialFeature]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeature]" />
                         <inputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SpecialFeatureCode]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SpecialFeatureCode]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="SpecialFeatureCode"
-                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SpecialFeatureCode]"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeatureCode]" />
+                          externalMetadataColumnId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SpecialFeatureCode]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output].Columns[SpecialFeatureCode]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRNO]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LRNO]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="LRNO" />
                         <externalMetadataColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sequence]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sequence]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="Sequence" />
                         <externalMetadataColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SpecialFeature]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SpecialFeature]"
                           codePage="1252"
                           dataType="str"
                           length="255"
                           name="SpecialFeature" />
                         <externalMetadataColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SpecialFeatureCode]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SpecialFeatureCode]"
                           codePage="1252"
                           dataType="str"
                           length="255"
@@ -6150,22 +6150,22 @@
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                       exclusionGroup="1"
                       isErrorOut="true"
                       name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      synchronousInputId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -6176,22 +6176,22 @@
               </components>
               <paths>
                 <path
-                  refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl.Paths[Flat File Source Output]"
-                  endId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat.Paths[Flat File Source Output]"
+                  endId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   name="Flat File Source Output"
-                  startId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source.Outputs[Flat File Source Output]" />
+                  startId="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source.Outputs[Flat File Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\tbl-Spl-Feat-Iterator\Execute SQL Task- ShipData Tbl"
+          DTS:refId="Package\tbl-Spl-Feat-Iterator\Execute SQL Task- SplFeat"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="Execute SQL Task"
           DTS:DTSID="{f3290bd4-efca-46f7-9c32-95ec23a184a3}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Execute SQL Task- ShipData Tbl"
+          DTS:ObjectName="Execute SQL Task- SplFeat"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
@@ -6209,13 +6209,13 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\tbl-Spl-Feat-Iterator\File System Task - ShipData Tbl"
+          DTS:refId="Package\tbl-Spl-Feat-Iterator\File System Task - SplFeat"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="File System Task"
           DTS:DTSID="{e92e5833-ad94-4a71-9769-74c783101672}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
-          DTS:ObjectName="File System Task - ShipData Tbl"
+          DTS:ObjectName="File System Task - SplFeat"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="0">
           <DTS:Variables />
@@ -6234,18 +6234,18 @@
           DTS:refId="Package\tbl-Spl-Feat-Iterator.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
           DTS:DTSID="{60376aa1-33c8-481f-9d70-6c81e599ba62}"
-          DTS:From="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl"
+          DTS:From="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
-          DTS:To="Package\tbl-Spl-Feat-Iterator\Execute SQL Task- ShipData Tbl" />
+          DTS:To="Package\tbl-Spl-Feat-Iterator\Execute SQL Task- SplFeat" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\tbl-Spl-Feat-Iterator.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
           DTS:DTSID="{06e71951-7827-43cc-9dc1-106116b77348}"
-          DTS:From="Package\tbl-Spl-Feat-Iterator\Execute SQL Task- ShipData Tbl"
+          DTS:From="Package\tbl-Spl-Feat-Iterator\Execute SQL Task- SplFeat"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
-          DTS:To="Package\tbl-Spl-Feat-Iterator\File System Task - ShipData Tbl" />
+          DTS:To="Package\tbl-Spl-Feat-Iterator\File System Task - SplFeat" />
       </DTS:PrecedenceConstraints>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
@@ -8954,15 +8954,15 @@
         </EdgeLayout>
         <NodeLayout
           Size="206,42"
-          Id="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl"
+          Id="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd"
           TopLeft="50,12" />
         <NodeLayout
           Size="218,42"
-          Id="Package\tbl-ShipTypCd-Iterator\Execute SQL Task- ShipData Tbl"
+          Id="Package\tbl-ShipTypCd-Iterator\Execute SQL Task- ShipTypeCd"
           TopLeft="48,88" />
         <NodeLayout
           Size="216,42"
-          Id="Package\tbl-ShipTypCd-Iterator\File System Task - ShipData Tbl"
+          Id="Package\tbl-ShipTypCd-Iterator\File System Task - ShipTypeCd"
           TopLeft="43,166" />
         <EdgeLayout
           Id="Package\tbl-ShipTypCd-Iterator.PrecedenceConstraints[Constraint]"
@@ -9039,15 +9039,15 @@
         </EdgeLayout>
         <NodeLayout
           Size="206,42"
-          Id="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl"
+          Id="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat"
           TopLeft="50,12" />
         <NodeLayout
           Size="218,42"
-          Id="Package\tbl-Spl-Feat-Iterator\Execute SQL Task- ShipData Tbl"
+          Id="Package\tbl-Spl-Feat-Iterator\Execute SQL Task- SplFeat"
           TopLeft="48,88" />
         <NodeLayout
           Size="216,42"
-          Id="Package\tbl-Spl-Feat-Iterator\File System Task - ShipData Tbl"
+          Id="Package\tbl-Spl-Feat-Iterator\File System Task - SplFeat"
           TopLeft="43,166" />
         <EdgeLayout
           Id="Package\tbl-Spl-Feat-Iterator.PrecedenceConstraints[Constraint]"
@@ -9279,20 +9279,20 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl">
+    design-time-name="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="153,42"
-          Id="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\Flat File Source"
+          Id="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\Flat File Source"
           TopLeft="53,61" />
         <NodeLayout
           Size="173,42"
-          Id="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination"
+          Id="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination"
           TopLeft="302,65" />
         <EdgeLayout
-          Id="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl.Paths[Flat File Source Output]"
+          Id="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd.Paths[Flat File Source Output]"
           TopLeft="206,84">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -9317,7 +9317,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination">
+    design-time-name="Package\tbl-ShipTypCd-Iterator\Data Flow Task- ShipTypeCd\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9330,20 +9330,20 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl">
+    design-time-name="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="153,42"
-          Id="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\Flat File Source"
+          Id="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\Flat File Source"
           TopLeft="53,61" />
         <NodeLayout
           Size="173,42"
-          Id="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination"
+          Id="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination"
           TopLeft="302,65" />
         <EdgeLayout
-          Id="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl.Paths[Flat File Source Output]"
+          Id="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat.Paths[Flat File Source Output]"
           TopLeft="206,84">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -9368,7 +9368,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\tbl-Spl-Feat-Iterator\Data Flow Task- ShipData Tbl\OLE DB Destination">
+    design-time-name="Package\tbl-Spl-Feat-Iterator\Data Flow Task- SplFeat\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
