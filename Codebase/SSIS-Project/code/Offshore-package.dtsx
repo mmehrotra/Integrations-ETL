@@ -5,21 +5,21 @@
   DTS:CreationName="SSIS.Package.3"
   DTS:CreatorComputerName="NOIMMEHRO62921"
   DTS:CreatorName="SAPIENT\mmehro"
-  DTS:DTSID="{A21119F9-08B7-43A6-9811-434062C7AA01}"
+  DTS:DTSID="{2E62B5D6-BF33-4CDC-B511-06632A48902E}"
   DTS:ExecutableType="SSIS.Package.3"
   DTS:LastModifiedProductVersion="11.0.5583.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="Offshore-package"
   DTS:PackageType="5"
-  DTS:VersionBuild="60"
-  DTS:VersionGUID="{AA9C1B9E-337B-4014-A382-FC9D39999350}">
+  DTS:VersionBuild="68"
+  DTS:VersionGUID="{3EE04DFD-CB9D-448A-A384-9E3B79F82539}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[FTP Connection Manager]"
       DTS:CreationName="FTP"
-      DTS:DTSID="{6BDD2B4B-A77B-498F-B410-ABF7B7A5147A}"
+      DTS:DTSID="{A16BB86C-3C56-4BC5-A790-DFEE2057F476}"
       DTS:ObjectName="FTP Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -30,34 +30,23 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACk6yTDv3SfPAENac+xmaxrAAAAAASAAACgAAAAEAAAAEML6aTE0V9dlQK2Xj0ereMoAAAAiQ/ZoQxAXdhV/8VjRBz5z8EJsG1taWV6XrsfjFolT52H+ZUTWGwMLhQAAAAmlZdTfiwqnKgCLCUanKa62tnfuA</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACbpEWqHUnu0dXA9uFjOWJRAAAAAASAAACgAAAAEAAAAMAdF6SICx1x9v/R6FL/sxooAAAA3zaiHvrhT1q3ueTJbZmfmJW9O3PrpZz8F+7Z1akvgh+8Tlwhft/X1hQAAADDKIeZRIo27jt8I8djitekAZHKJg</DTS:Property>
           </DTS:FtpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[inbound]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{9FEBB6A4-0A85-4B0D-9776-E92FE45E8073}"
-      DTS:ObjectName="inbound">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:FileUsageType="2"
-          DTS:ConnectionString="D:\mohit-test\inbound" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.integrations.sa]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{B004B917-EB7D-40F7-A627-B7A989B59DA0}"
+      DTS:DTSID="{8F57914C-59FB-437C-9483-9B2ACAAC4B29}"
       DTS:ObjectName="localhost.integrations.sa">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=integrations;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-Package-{B004B917-EB7D-40F7-A627-B7A989B59DA0}localhost.integrations.sa;">
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=integrations;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-Package-{8F57914C-59FB-437C-9483-9B2ACAAC4B29}localhost.integrations.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADK7nhWgSiVqrFLe8j+x2C1AAAAAASAAACgAAAAEAAAANQ6Tzxmu5QBstbAF/PnmrwYAAAAxgqdtIuesiSWd6C7gibFovU/h7hvWJjIFAAAAHn2uKB6JrHkaND1OJDVZQcdwgWM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX/90vTWRSEy7fNOAYymUmAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD16J5siNkjMzbIaSRNgrKXAAAAAASAAACgAAAAEAAAAM2fEgo1wnjSJ0vIjMyJUGIYAAAAOGzWOG4kGJHhhnkRgtAziZBJZAXv5+I0FAAAACTd5FC/ahGbNyb4b+WR78uMNpWd</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -65,7 +54,7 @@
       DTS:refId="Package.ConnectionManagers[Offshore-Misc-File-Mgnr]"
       DTS:CreationName="FLATFILE"
       DTS:Description="This offshore misc csv"
-      DTS:DTSID="{2CC99ECF-6541-4FF0-AB10-B3E5405A606E}"
+      DTS:DTSID="{B8B817BF-3357-498B-8826-89DF472B28C2}"
       DTS:ObjectName="Offshore-Misc-File-Mgnr">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::offshoreFullProcessingPath]</DTS:PropertyExpression>
@@ -87,7 +76,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;LRIMOShipNo&quot;"
-              DTS:DTSID="{04953BF0-EDA9-4026-9DAB-E1ADD78F9208}"
+              DTS:DTSID="{735497A3-0C23-458C-90C7-7D2C1F8CD573}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -96,7 +85,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Latitude&quot;"
-              DTS:DTSID="{34304B30-90C7-45B1-86A2-8E8278F2299C}"
+              DTS:DTSID="{EC96564E-5B79-491D-A1C8-C76CC9A6221A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -105,7 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Longitude&quot;"
-              DTS:DTSID="{657B50A2-B618-4967-B506-D9542CE6539D}"
+              DTS:DTSID="{2BA49671-ED86-4294-B8C3-FC8C46D34ABA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -114,7 +103,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;ShipName&quot;"
-              DTS:DTSID="{63AC40B2-9F14-48B0-B0E2-BECAA2F6F13A}"
+              DTS:DTSID="{74ABD52A-43F7-4620-B286-C6F7C963CF24}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +112,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;ShipType&quot;"
-              DTS:DTSID="{C9A825ED-B8DA-4620-BF01-8FF358B64595}"
+              DTS:DTSID="{1E655199-3797-41B5-8CC7-1F4645D98313}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -132,7 +121,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Draught&quot;"
-              DTS:DTSID="{4360E631-4119-472F-8533-C3E1902BEFBC}"
+              DTS:DTSID="{0ECC1AF3-878F-4F70-89D4-3A0616DA8C47}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -141,7 +130,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Beam&quot;"
-              DTS:DTSID="{9C1DC154-785B-40D6-A903-7D2291A91EF5}"
+              DTS:DTSID="{D19E7C6E-2208-423B-8AD0-A388928073B1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -150,7 +139,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Length&quot;"
-              DTS:DTSID="{9302018A-6D9D-43D9-9A8A-85A774B93C65}"
+              DTS:DTSID="{12180DA6-FDFE-4AAD-A744-D572EE48605E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -159,7 +148,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;CallSign&quot;"
-              DTS:DTSID="{6E78A65F-1DFB-48A6-89E9-CD4A21309263}"
+              DTS:DTSID="{4022E0B2-9114-4C4B-AD67-17978FC16741}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -168,7 +157,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MMSI"
-              DTS:DTSID="{C60EB31E-6EF6-42AD-9656-D08D682F1171}"
+              DTS:DTSID="{4439A093-7CDB-4D23-81B7-E4BCE40FFFB2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -177,7 +166,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Speed&quot;"
-              DTS:DTSID="{ED4B5D49-764A-49E8-A55D-BF78472A4A57}"
+              DTS:DTSID="{CD52024F-0656-4C3D-B057-E0AD99CEE90C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -186,7 +175,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Heading"
-              DTS:DTSID="{D191262D-07EE-4621-9F4C-D7E7739E1A94}"
+              DTS:DTSID="{8B11D354-F730-4B14-8764-8188DDF1855B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -195,7 +184,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;Destination&quot;"
-              DTS:DTSID="{ABBCAD66-F751-4B7D-87CE-42A57173F6F5}"
+              DTS:DTSID="{4CFB9DB3-5EC7-4FAA-B992-2853C02F5242}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -204,7 +193,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;DestinationTidied&quot;"
-              DTS:DTSID="{6622ECEF-E513-4DE1-9565-DDB661B29C4C}"
+              DTS:DTSID="{C9B4E16D-92AF-44C0-8055-2A5B6215E425}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -213,7 +202,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;ETA&quot;"
-              DTS:DTSID="{E46DA448-162F-486D-81CB-FFA0DA948E48}"
+              DTS:DTSID="{63910A1A-E3A8-4AF7-853A-48626DD777A2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -222,7 +211,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;AdditionalInfo&quot;"
-              DTS:DTSID="{CDB94862-D1E4-433E-AA7B-D82B12C5B6C6}"
+              DTS:DTSID="{875BA7E7-1AEE-4DDC-961D-1E80AC0A774B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -231,7 +220,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;MovementDateTime&quot;"
-              DTS:DTSID="{7E9C9409-4BE1-4B2E-966A-A08F842F8278}"
+              DTS:DTSID="{CB5CCBE7-8E24-4FB4-B548-27DD08161F6B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -240,7 +229,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MovementID"
-              DTS:DTSID="{3EDD0D9E-9ECD-4F1F-AE2F-28EC8EA5263F}"
+              DTS:DTSID="{586CBAE7-D5B2-4562-B383-0228AD7F0B6F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -249,7 +238,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;MoveStatus&quot;"
-              DTS:DTSID="{55B31222-8835-42DB-B846-268F93240979}"
+              DTS:DTSID="{CD3DE202-F158-4A32-8357-1BA5FCF4232B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -258,7 +247,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TEU"
-              DTS:DTSID="{30D96D23-23B9-4218-BA31-CBE22BE4F2D7}"
+              DTS:DTSID="{156BAFCB-E4ED-4A21-B153-2FC1ACA8A55C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -268,7 +257,7 @@
       DTS:refId="Package.ConnectionManagers[offshore-tblLastPort-ConnectionMgnr]"
       DTS:CreationName="FLATFILE"
       DTS:Description="Connection manager for offshore's tblLastPortCall files"
-      DTS:DTSID="{510C4ECD-ED39-4944-94F8-4E25CB90B373}"
+      DTS:DTSID="{4D07F62E-E93D-4DF0-B84B-6F4A452E505F}"
       DTS:ObjectName="offshore-tblLastPort-ConnectionMgnr">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::offshoreTblFullProcPath]</DTS:PropertyExpression>
@@ -290,7 +279,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MMSI"
-              DTS:DTSID="{312FBD2B-6956-4FE5-9412-F092C1B8BEF0}"
+              DTS:DTSID="{53432C56-B3E3-4E91-A229-C6B8DFE5D11F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -299,7 +288,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LRNO"
-              DTS:DTSID="{0D9E5AD5-ABCF-452A-9347-2EC36D4AEB28}"
+              DTS:DTSID="{0A75CD8F-A3C6-45EC-BC57-81A156FAFB35}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -308,7 +297,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Port_ID"
-              DTS:DTSID="{1029D114-A85D-46D5-BDD7-6F3D2F4395F0}"
+              DTS:DTSID="{C23F8112-8573-4244-B59F-F76918865BDC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -317,7 +306,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CountryCode"
-              DTS:DTSID="{5317C2DE-B7F6-4EEF-9623-A2C58672547D}"
+              DTS:DTSID="{4F5BBE47-B273-4A9D-991D-0774A9654EA6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -326,7 +315,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{BCA15A23-314F-4C07-A697-ED12D48F1FB0}"
+              DTS:DTSID="{B743C197-A244-4D94-B163-80885FD98901}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -335,7 +324,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LastPortofCall"
-              DTS:DTSID="{339B5C3A-919B-4FA9-A71B-12C16BC4D042}"
+              DTS:DTSID="{DF6DA4F2-6E37-47D8-9FC2-F6EF26C4A990}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -344,7 +333,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ArrDate"
-              DTS:DTSID="{825A6BDE-E3F2-473F-BE9C-91765F5C1E1A}"
+              DTS:DTSID="{EB8AF1AB-4FC5-442A-B457-BC1CF8D78477}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -353,7 +342,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Saildate"
-              DTS:DTSID="{C9221011-76F5-4E58-A4F1-379F0A33226C}"
+              DTS:DTSID="{1B221308-E5E9-4543-9CD4-D2EC025B1996}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -362,7 +351,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PortCallID"
-              DTS:DTSID="{8574E8F2-4652-4A6B-A76A-A639DEC27372}"
+              DTS:DTSID="{B791A1AD-22B3-42E8-AFDC-7F84076F60D9}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -372,7 +361,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9EC66BBC-2D17-4B99-B04B-0F34D0CA14F9}"
+      DTS:DTSID="{F206BC56-F8D9-49DA-A933-6B6E55C59E62}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;archive\\&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -383,18 +372,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{698B3670-308E-4F8F-86E9-88C9C79C4107}"
+      DTS:DTSID="{506B3E61-9A63-4C15-9EEA-6F9A0801409E}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="((DT_WSTR, 4) YEAR(GETDATE())) + (RIGHT(&quot;0&quot;+(DT_WSTR, 2) MONTH(GETDATE()) ,2)) +  (RIGHT(&quot;0&quot;+(DT_WSTR, 2) DAY(GETDATE()) ,2))"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="currDate">
       <DTS:VariableValue
-        DTS:DataType="8">20170406</DTS:VariableValue>
+        DTS:DataType="8">20170407</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C85F405F-CB72-485B-A16B-1337EEDACB25}"
+      DTS:DTSID="{A126C849-0C83-4767-8B05-142425CAB355}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="currentFile">
@@ -403,7 +392,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{4DBE4C0A-2D00-4215-8D07-26C89076EA45}"
+      DTS:DTSID="{09DA147F-59C5-42D8-A281-D5A295DD0B07}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;inbound\\&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -414,7 +403,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A5FC7769-C5F9-4DEB-99FE-93E62553ADB0}"
+      DTS:DTSID="{F13B3D10-EA99-4E76-B0FE-7051CD27072C}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;D:\\integrations\\feeds\\&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -425,7 +414,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{4D949020-4E80-4346-838B-EBD0A1108813}"
+      DTS:DTSID="{ECC01BBE-8946-42F2-B7BF-59BE455F121C}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;not-processing\\&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="notprocessingFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">not-processing\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{89CA04CA-5B8D-4A5C-8457-E140AE3BC082}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::localRootFolder] +  @[User::offshoreLocalFolder] +  @[User::archiveFolder]"
       DTS:IncludeInDebugDump="2345"
@@ -436,18 +436,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D436D041-A5BA-48D6-BD89-975ED9A1C567}"
+      DTS:DTSID="{4574E4F6-C2DE-4717-90D9-8B4D196F0C8D}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::offshoreFTPRootPath] + @[User::currDate]  + &quot;.zip&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="offshoreFTPCompPath">
       <DTS:VariableValue
-        DTS:DataType="8">/Offshore - Miscellaneous_20170406.zip</DTS:VariableValue>
+        DTS:DataType="8">/Offshore - Miscellaneous_20170407.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6B212743-867E-4B4B-B8E5-87FB504C8B80}"
+      DTS:DTSID="{428ECE3E-E44A-4C22-87E7-F275CD19A06E}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;/Offshore - Miscellaneous_&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -458,7 +458,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0EFC7891-08F5-443F-AC3A-7E3CED21A525}"
+      DTS:DTSID="{B8F3127A-A87D-49CA-8D61-AC02E30E7457}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::offshoreProcessingFolder] +  @[User::currentFile]"
       DTS:IncludeInDebugDump="2345"
@@ -469,7 +469,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9FC6F76D-F49D-4CC3-93CB-B3525DEB5413}"
+      DTS:DTSID="{37A6B2C0-42E0-4EF2-8E7F-554999D898A4}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::localRootFolder] + @[User::offshoreLocalFolder]  +  @[User::inboundFolder]"
       DTS:IncludeInDebugDump="2345"
@@ -480,7 +480,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0BC050A8-396F-4A12-A294-FA896ED07A00}"
+      DTS:DTSID="{EF36CD91-0E34-4010-BDAE-71FDC2B513BA}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;offshore\\&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -491,7 +491,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{97519D69-14AA-48EB-B414-ACA2572F2FD8}"
+      DTS:DTSID="{36A0448A-E2EF-4D4A-AF9C-2AA449F89105}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::localRootFolder] +  @[User::offshoreLocalFolder] +  @[User::notprocessingFolder]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="offshoreNotProcessingFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\integrations\feeds\offshore\not-processing\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F755EDCB-9731-49A1-BC30-6FBAD7163E7E}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::localRootFolder] +  @[User::offshoreLocalFolder] +  @[User::processingFolder]"
       DTS:IncludeInDebugDump="2345"
@@ -502,7 +513,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{ED78660A-6BAA-4E87-A151-8BCE79C71B2D}"
+      DTS:DTSID="{01B43B1C-BB9E-47DB-9A5C-3C81355121F0}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::offshoreProcessingFolder] +  @[User::tblCurrentFile]"
       DTS:IncludeInDebugDump="2345"
@@ -513,18 +524,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{18CAE5CD-A8BA-4EDF-BD3A-99946BBD6562}"
+      DTS:DTSID="{6A35EA33-47EB-4FD4-A731-F6C8724C51B3}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;e &quot; + &quot;\&quot;&quot; + @[User::offshoreInbound] +  @[User::offshoreFTPCompPath] + &quot;\&quot;&quot; + &quot; -o&quot; +  @[User::offshoreProcessingFolder] + &quot; -y&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="offshoreUnzipExp">
       <DTS:VariableValue
-        DTS:DataType="8">e "D:\integrations\feeds\offshore\inbound\/Offshore - Miscellaneous_20170406.zip" -oD:\integrations\feeds\offshore\processing\ -y</DTS:VariableValue>
+        DTS:DataType="8">e "D:\integrations\feeds\offshore\inbound\/Offshore - Miscellaneous_20170407.zip" -oD:\integrations\feeds\offshore\processing\ -y</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2993BD45-B861-4702-856D-0F1318AFAF40}"
+      DTS:DTSID="{A73BEC82-0B8E-49F4-86B2-1A8E172BB129}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;processing\\&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -535,7 +546,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{90DA057F-AA4F-44B9-8292-DD3D10F93588}"
+      DTS:DTSID="{BF8F3EE6-E80B-4176-B4E4-901DF332A182}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::offshoreInbound] + @[User::offshoreFTPCompPath]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="sourcePathForArchive">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\integrations\feeds\offshore\inbound\/Offshore - Miscellaneous_20170407.zip</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C2CCF815-9300-44CA-8C97-A51609A470B5}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="tblCurrentFile">
@@ -545,10 +567,30 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
+      DTS:refId="Package\Archive the Zip"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="File System Task"
+      DTS:DTSID="{71CE1388-C381-4B74-ABC5-54D002D2FBD4}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Archive the Zip"
+      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="MoveFile"
+          TaskSourcePath="User::sourcePathForArchive"
+          TaskIsSourceVariable="True"
+          TaskDestinationPath="User::offshoreArchiveFolder"
+          TaskIsDestinationVariable="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Execute Process Task"
       DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.ExecuteProcess, Microsoft.SqlServer.ExecProcTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:Description="Execute Process Task"
-      DTS:DTSID="{945B5B35-F103-4A3B-AE7B-6B8B04AF7FF7}"
+      DTS:DTSID="{50C2BE69-EF5C-4D68-A70F-1B679D49B743}"
       DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.ExecuteProcess, Microsoft.SqlServer.ExecProcTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute Process Task"
@@ -562,7 +604,7 @@
       <DTS:ObjectData>
         <ExecuteProcessData
           Executable="C:\Program Files\7-Zip\7z.exe"
-          Arguments="e &quot;D:\integrations\feeds\offshore\inbound\/Offshore - Miscellaneous_20170406.zip&quot; -oD:\integrations\feeds\offshore\processing\ -y"
+          Arguments="e &quot;D:\integrations\feeds\offshore\inbound\/Offshore - Miscellaneous_20170407.zip&quot; -oD:\integrations\feeds\offshore\processing\ -y"
           WorkingDirectory="D:\integrations\feeds\offshore\processing\" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -570,7 +612,7 @@
       DTS:refId="Package\FTP Task - Offshore"
       DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FtpTask.FtpTask, Microsoft.SqlServer.FtpTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:Description="FTP Task"
-      DTS:DTSID="{2E859C5E-28CF-46A5-A86E-C47E71E52C53}"
+      DTS:DTSID="{8C29462A-0D0A-457B-8172-10F4C4CA0FC4}"
       DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FtpTask.FtpTask, Microsoft.SqlServer.FtpTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="FTP Task - Offshore"
@@ -579,7 +621,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <FtpData
-          ConnectionName="{6BDD2B4B-A77B-498F-B410-ABF7B7A5147A}"
+          ConnectionName="{A16BB86C-3C56-4BC5-A790-DFEE2057F476}"
           TaskOperationType="Receive"
           TaskIsLocalPathVar="True"
           TaskLocalPath="User::offshoreInbound"
@@ -591,14 +633,14 @@
       DTS:refId="Package\Offshore-Misc-Iterator"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{32415E5D-C3C9-482B-B4B2-236CB4F3F41B}"
+      DTS:DTSID="{C179A0B2-74C3-43D9-8BA4-967F74018B56}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
       DTS:ObjectName="Offshore-Misc-Iterator">
       <DTS:ForEachEnumerator
         DTS:CreationName="DTS.ForEachFileEnumerator.3"
-        DTS:DTSID="{4390A789-DB3A-4AF3-8F7A-AB1E812D5B24}"
-        DTS:ObjectName="{4390A789-DB3A-4AF3-8F7A-AB1E812D5B24}">
+        DTS:DTSID="{EF2E123E-C571-4745-99D3-C125BF6B75D8}"
+        DTS:ObjectName="{EF2E123E-C571-4745-99D3-C125BF6B75D8}">
         <DTS:PropertyExpression
           DTS:Name="Directory">@[User::offshoreProcessingFolder]</DTS:PropertyExpression>
         <DTS:ObjectData>
@@ -620,7 +662,7 @@
           DTS:refId="Package\Offshore-Misc-Iterator\Data Flow Task- Offshore Main"
           DTS:CreationName="SSIS.Pipeline.3"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{29B92C0C-2E74-47EA-818B-7A11620162C9}"
+          DTS:DTSID="{7864FB79-5FC4-4B4D-AB62-B7391546CAC9}"
           DTS:ExecutableType="SSIS.Pipeline.3"
           DTS:LocaleID="-1"
           DTS:ObjectName="Data Flow Task- Offshore Main"
@@ -1642,19 +1684,39 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
+          DTS:refId="Package\Offshore-Misc-Iterator\Delete"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="File System Task"
+          DTS:DTSID="{4EE571E5-ACD0-47CA-90E5-DD6BBE2FCDA2}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="DeleteFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="{B8B817BF-3357-498B-8826-89DF472B28C2}"
+              TaskDestinationPath="User::offshoreArchiveFolder"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
           DTS:refId="Package\Offshore-Misc-Iterator\Execute SQL - Offshore Main"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{6F04E2A6-D21A-4BB3-8A3F-DCED8CA8F749}"
+          DTS:DTSID="{7BE9253F-E36D-44E3-9B82-CDAB6504F6A9}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL - Offshore Main"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{B004B917-EB7D-40F7-A627-B7A989B59DA0}"
+              SQLTask:Connection="{8F57914C-59FB-437C-9483-9B2ACAAC4B29}"
               SQLTask:SqlStatementSource="EXECUTE sp_offshore_misc_processing ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -1666,22 +1728,21 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Offshore-Misc-Iterator\File System Task - Offshore Main"
+          DTS:refId="Package\Offshore-Misc-Iterator\Move"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="File System Task"
-          DTS:DTSID="{78408FB8-768E-4C58-8DBE-0C4E51680AE6}"
+          DTS:DTSID="{EADC3CFD-FDFB-4437-B090-93929FDAE6B8}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
-          DTS:ObjectName="File System Task - Offshore Main"
+          DTS:ObjectName="Move"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
               TaskOperationType="MoveFile"
-              TaskOverwriteDestFile="True"
-              TaskSourcePath="{2CC99ECF-6541-4FF0-AB10-B3E5405A606E}"
-              TaskDestinationPath="User::offshoreArchiveFolder"
+              TaskSourcePath="{B8B817BF-3357-498B-8826-89DF472B28C2}"
+              TaskDestinationPath="User::offshoreNotProcessingFolder"
               TaskIsDestinationVariable="True" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -1690,7 +1751,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Offshore-Misc-Iterator.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{3C69B59E-F6A5-4A45-97F5-671CB33E06DC}"
+          DTS:DTSID="{CFC73B23-4893-4BF5-AA15-0238FB1C18F4}"
           DTS:From="Package\Offshore-Misc-Iterator\Data Flow Task- Offshore Main"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -1698,18 +1759,26 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Offshore-Misc-Iterator.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{2D492879-BA6B-4316-ABD3-8B8B0624E630}"
+          DTS:DTSID="{669CF1B6-26AE-495F-85AB-1A2715CF4602}"
           DTS:From="Package\Offshore-Misc-Iterator\Execute SQL - Offshore Main"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
-          DTS:To="Package\Offshore-Misc-Iterator\File System Task - Offshore Main"
-          DTS:Value="2" />
+          DTS:To="Package\Offshore-Misc-Iterator\Delete" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Offshore-Misc-Iterator.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{3EC794B2-F08D-441B-B274-4395DE05C477}"
+          DTS:From="Package\Offshore-Misc-Iterator\Execute SQL - Offshore Main"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Offshore-Misc-Iterator\Move"
+          DTS:Value="1" />
       </DTS:PrecedenceConstraints>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{D3B997A6-7D75-480C-ABCD-14D798F09DE3}"
-          DTS:ObjectName="{D3B997A6-7D75-480C-ABCD-14D798F09DE3}"
+          DTS:DTSID="{543B0090-C6AD-47BB-8A73-435C61AC80E5}"
+          DTS:ObjectName="{543B0090-C6AD-47BB-8A73-435C61AC80E5}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::currentFile" />
       </DTS:ForEachVariableMappings>
@@ -1718,14 +1787,14 @@
       DTS:refId="Package\tblLastPortofCall-Iterator"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{777E84ED-0292-4B13-9DC1-92DF02F0FFF0}"
+      DTS:DTSID="{F8D3565D-29D1-4ABB-96F7-7390EF3D1862}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
       DTS:ObjectName="tblLastPortofCall-Iterator">
       <DTS:ForEachEnumerator
         DTS:CreationName="DTS.ForEachFileEnumerator.3"
-        DTS:DTSID="{3CCFDDBE-963B-4C21-9C9D-60A4A1B55D85}"
-        DTS:ObjectName="{3CCFDDBE-963B-4C21-9C9D-60A4A1B55D85}">
+        DTS:DTSID="{3E670BBD-6DC1-4FBF-8FC9-74D4F002A3C6}"
+        DTS:ObjectName="{3E670BBD-6DC1-4FBF-8FC9-74D4F002A3C6}">
         <DTS:PropertyExpression
           DTS:Name="Directory">@[User::offshoreProcessingFolder]</DTS:PropertyExpression>
         <DTS:ObjectData>
@@ -1747,7 +1816,7 @@
           DTS:refId="Package\tblLastPortofCall-Iterator\Data Flow Task- Offshore Tbl"
           DTS:CreationName="SSIS.Pipeline.3"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{BD65E31C-4405-430D-99E2-E179ACCFAA80}"
+          DTS:DTSID="{41CB27DD-B924-4C2A-92FB-87D0A40F286A}"
           DTS:ExecutableType="SSIS.Pipeline.3"
           DTS:LocaleID="-1"
           DTS:ObjectName="Data Flow Task- Offshore Tbl"
@@ -2315,19 +2384,39 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
+          DTS:refId="Package\tblLastPortofCall-Iterator\Delete"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="File System Task"
+          DTS:DTSID="{4540C51D-ECC1-4EFC-9956-14AD347DCF3A}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="DeleteFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="{4D07F62E-E93D-4DF0-B84B-6F4A452E505F}"
+              TaskDestinationPath="User::offshoreArchiveFolder"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
           DTS:refId="Package\tblLastPortofCall-Iterator\Execute SQL Task- Offshore Tbl"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{76A14FBC-EDAE-42D9-8A53-8F1ECB7FE6EE}"
+          DTS:DTSID="{7D79C445-0BC0-4A76-B23E-83CAD4F0BA74}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task- Offshore Tbl"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{B004B917-EB7D-40F7-A627-B7A989B59DA0}"
+              SQLTask:Connection="{8F57914C-59FB-437C-9483-9B2ACAAC4B29}"
               SQLTask:SqlStatementSource="EXECUTE sp_Offshore_tbl_processing ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -2339,22 +2428,21 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\tblLastPortofCall-Iterator\File System Task - Offshore Tbl"
+          DTS:refId="Package\tblLastPortofCall-Iterator\Move"
           DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:Description="File System Task"
-          DTS:DTSID="{5EDC6F1B-E2F5-47ED-8904-49B39004DDEB}"
+          DTS:DTSID="{7ADBF690-0945-4EFB-862E-180206297C45}"
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
-          DTS:ObjectName="File System Task - Offshore Tbl"
+          DTS:ObjectName="Move"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
               TaskOperationType="MoveFile"
-              TaskOverwriteDestFile="True"
-              TaskSourcePath="{510C4ECD-ED39-4944-94F8-4E25CB90B373}"
-              TaskDestinationPath="User::offshoreArchiveFolder"
+              TaskSourcePath="{4D07F62E-E93D-4DF0-B84B-6F4A452E505F}"
+              TaskDestinationPath="User::offshoreNotProcessingFolder"
               TaskIsDestinationVariable="True" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -2363,7 +2451,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{AFDE5D4F-20FE-4812-A292-AE83C382CA8B}"
+          DTS:DTSID="{BD77AF22-4DAD-4F90-99DE-20964947B839}"
           DTS:From="Package\tblLastPortofCall-Iterator\Data Flow Task- Offshore Tbl"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -2371,17 +2459,26 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{ABBCE109-C75D-4331-9093-1F5E7BE9CDC0}"
+          DTS:DTSID="{99D45859-D16D-4AA9-B575-3736C28CE478}"
           DTS:From="Package\tblLastPortofCall-Iterator\Execute SQL Task- Offshore Tbl"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
-          DTS:To="Package\tblLastPortofCall-Iterator\File System Task - Offshore Tbl" />
+          DTS:To="Package\tblLastPortofCall-Iterator\Delete" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{6C9632AB-71FF-4EF7-BE24-887859F5E495}"
+          DTS:From="Package\tblLastPortofCall-Iterator\Execute SQL Task- Offshore Tbl"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\tblLastPortofCall-Iterator\Move"
+          DTS:Value="1" />
       </DTS:PrecedenceConstraints>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{41C5B234-40B0-402A-8761-55C77844C24C}"
-          DTS:ObjectName="{41C5B234-40B0-402A-8761-55C77844C24C}"
+          DTS:DTSID="{04177884-295C-4DE5-BE3F-3BA3C7E26CC6}"
+          DTS:ObjectName="{04177884-295C-4DE5-BE3F-3BA3C7E26CC6}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::tblCurrentFile" />
       </DTS:ForEachVariableMappings>
@@ -2391,7 +2488,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{18A116C1-9CEE-4952-8A61-F8C89FD8F4F7}"
+      DTS:DTSID="{4B13985E-A271-4ADD-8B88-4949206CFA2E}"
       DTS:From="Package\FTP Task - Offshore"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -2399,7 +2496,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{35A009E0-AC57-4DA0-A72B-BAFF338A10EA}"
+      DTS:DTSID="{A7E972DF-E8A4-4C7B-8189-D28733F8404F}"
       DTS:From="Package\Execute Process Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -2407,11 +2504,19 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{4ABD9FAB-105C-44AB-A6F4-439E41ACED9B}"
+      DTS:DTSID="{01E1ACB6-D652-4499-933B-09B0120FA4AE}"
       DTS:From="Package\Offshore-Misc-Iterator"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\tblLastPortofCall-Iterator" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{1A308E37-4851-41F7-BBD9-EA29841CF8E9}"
+      DTS:From="Package\Execute Process Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Archive the Zip" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -2442,9 +2547,9 @@
           Id="Package\Offshore-Misc-Iterator\Execute SQL - Offshore Main"
           TopLeft="47,98" />
         <NodeLayout
-          Size="223,42"
-          Id="Package\Offshore-Misc-Iterator\File System Task - Offshore Main"
-          TopLeft="48,183" />
+          Size="130,42"
+          Id="Package\Offshore-Misc-Iterator\Delete"
+          TopLeft="21,184" />
         <EdgeLayout
           Id="Package\Offshore-Misc-Iterator.PrecedenceConstraints[Constraint]"
           TopLeft="155,64">
@@ -2469,33 +2574,83 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Offshore-Misc-Iterator.PrecedenceConstraints[Constraint 1]"
-          TopLeft="157.25,140">
+          TopLeft="120.333333333333,140">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43"
+              EndConnector="-34.3333333333333,44"
               Start="0,0"
-              End="0,35.5">
+              End="-34.3333333333333,36.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.5" />
+                    End="0,13.7941176470588" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.7941176470588"
+                    Point2="0,17.7941176470588"
+                    Point3="-4,17.7941176470588" />
+                  <mssgle:LineSegment
+                    End="-30.3333333333333,17.7941176470588" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-30.3333333333333,17.7941176470588"
+                    Point2="-34.3333333333333,17.7941176470588"
+                    Point3="-34.3333333333333,21.7941176470588" />
+                  <mssgle:LineSegment
+                    End="-34.3333333333333,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="106,42"
+          Id="Package\Offshore-Misc-Iterator\Move"
+          TopLeft="170,184" />
+        <EdgeLayout
+          Id="Package\Offshore-Misc-Iterator.PrecedenceConstraints[Constraint 2]"
+          TopLeft="189.666666666667,140">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="33.3333333333333,44"
+              Start="0,0"
+              End="33.3333333333333,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.7941176470588" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.7941176470588"
+                    Point2="0,17.7941176470588"
+                    Point3="4,17.7941176470588" />
+                  <mssgle:LineSegment
+                    End="29.3333333333333,17.7941176470588" />
+                  <mssgle:CubicBezierSegment
+                    Point1="29.3333333333333,17.7941176470588"
+                    Point2="33.3333333333333,17.7941176470588"
+                    Point3="33.3333333333333,21.7941176470588" />
+                  <mssgle:LineSegment
+                    End="33.3333333333333,36.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-25.304453125,11.9453125,50.60890625,11.609375"
+              BoundingBox="1.42531901041667,22.7941176470588,30.4826953125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="276,280"
-          Size="276,323"
+          PanelSize="282,308"
+          Size="282,351"
           Id="Package\Offshore-Misc-Iterator"
           TopLeft="447,19" />
         <NodeLayout
@@ -2507,9 +2662,9 @@
           Id="Package\tblLastPortofCall-Iterator\Execute SQL Task- Offshore Tbl"
           TopLeft="48,88" />
         <NodeLayout
-          Size="216,42"
-          Id="Package\tblLastPortofCall-Iterator\File System Task - Offshore Tbl"
-          TopLeft="43,166" />
+          Size="130,42"
+          Id="Package\tblLastPortofCall-Iterator\Delete"
+          TopLeft="20,165" />
         <EdgeLayout
           Id="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint]"
           TopLeft="128.5,54">
@@ -2534,18 +2689,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint 1]"
-          TopLeft="154,130">
+          TopLeft="157,130">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36"
+              EndConnector="-72,35"
               Start="0,0"
-              End="0,28.5">
+              End="-72,27.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
+                    End="0,13.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.5"
+                    Point2="0,17.5"
+                    Point3="-4,17.5" />
+                  <mssgle:LineSegment
+                    End="-68,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-68,17.5"
+                    Point2="-72,17.5"
+                    Point3="-72,21.5" />
+                  <mssgle:LineSegment
+                    End="-72,27.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2554,11 +2721,51 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="130,42"
+          Id="Package\tblLastPortofCall-Iterator\Move"
+          TopLeft="171,167" />
+        <EdgeLayout
+          Id="Package\tblLastPortofCall-Iterator.PrecedenceConstraints[Constraint 2]"
+          TopLeft="192,130">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44,37"
+              Start="0,0"
+              End="44,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.9617486338798" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.9617486338798"
+                    Point2="0,14.9617486338798"
+                    Point3="4,14.9617486338798" />
+                  <mssgle:LineSegment
+                    End="40,14.9617486338798" />
+                  <mssgle:CubicBezierSegment
+                    Point1="40,14.9617486338798"
+                    Point2="44,14.9617486338798"
+                    Point3="44,18.9617486338798" />
+                  <mssgle:LineSegment
+                    End="44,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="6.75865234375,19.9617486338798,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="277,269"
-          Size="277,312"
+          PanelSize="307,277"
+          Size="307,320"
           Id="Package\tblLastPortofCall-Iterator"
           TopLeft="799,20" />
         <EdgeLayout
@@ -2601,9 +2808,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="44,89.5"
+              EndConnector="44,103.5"
               Start="0,0"
-              End="36.5,89.5">
+              End="36.5,103.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2614,13 +2821,13 @@
                     Point2="22,0"
                     Point3="22,4" />
                   <mssgle:LineSegment
-                    End="22,85.5" />
+                    End="22,99.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="22,85.5"
-                    Point2="22,89.5"
-                    Point3="26,89.5" />
+                    Point1="22,99.5"
+                    Point2="22,103.5"
+                    Point3="26,103.5" />
                   <mssgle:LineSegment
-                    End="36.5,89.5" />
+                    End="36.5,103.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2631,18 +2838,56 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="723,178.25">
+          TopLeft="729,194.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="76,0"
+              EndConnector="70,-14.5"
               Start="0,0"
-              End="68.5,0">
+              End="62.5,-14.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="68.5,0" />
+                    End="31,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31,0"
+                    Point2="35,0"
+                    Point3="35,-4" />
+                  <mssgle:LineSegment
+                    End="35,-10.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35,-10.5"
+                    Point2="35,-14.5"
+                    Point3="39,-14.5" />
+                  <mssgle:LineSegment
+                    End="62.5,-14.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Archive the Zip"
+          TopLeft="231,160" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="309.5,112">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2658,7 +2903,7 @@
     design-time-name="Package\Offshore-Misc-Iterator\Data Flow Task- Offshore Main">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="153,42"
           Id="Package\Offshore-Misc-Iterator\Data Flow Task- Offshore Main\Flat File Source"
@@ -2686,7 +2931,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2709,7 +2956,7 @@
     design-time-name="Package\tblLastPortofCall-Iterator\Data Flow Task- Offshore Tbl">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="173,42"
           Id="Package\tblLastPortofCall-Iterator\Data Flow Task- Offshore Tbl\OLE DB Destination"
@@ -2737,7 +2984,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
