@@ -45,6 +45,9 @@ BEGIN TRY
 	GearDescriptiveNarrative, CONVERT(BIGINT,PumpingCapacityM3),GETDATE(),'SYSTEM',GETDATE(),'SYSTEM','aaa'
 	FROM T_STG_SHIP_DATA_DEAD;
 	
+	
+	
+	
 	-- Truncating the staging table after the insertion.
 	TRUNCATE TABLE T_STG_SHIP_DATA_DEAD;
 		

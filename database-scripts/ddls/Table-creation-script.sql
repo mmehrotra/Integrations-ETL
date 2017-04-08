@@ -205,15 +205,15 @@ CREATE TABLE [T_OFFSHORE_TBL_LAST_PORT_OF_CALL] (
 );
 
 -------------------------------------------------------------------------------------------------------
--- Ship Dead tables
+-- Ship Data tables
 ---------------------------------------------------------------------------
 
--- DROP TABLE [T_STG_SHIP_DATA_DEAD];
--- TRUNCATE TABLE T_STG_SHIP_DATA_DEAD;
--- SELECT * FROM [T_STG_SHIP_DATA_DEAD];
+-- DROP TABLE [T_STG_SHIP_DATA];
+-- TRUNCATE TABLE T_STG_SHIP_DATA;
+-- SELECT * FROM [T_STG_SHIP_DATA];
 -- Script for creation of staging table for ship data dead ship
 -- TODO :: create the primary key and other constraints
-CREATE TABLE [T_STG_SHIP_DATA_DEAD] (
+CREATE TABLE [T_STG_SHIP_DATA] (
     [LRIMOShipNo] varchar(255),
     [ShipName] varchar(255),
     [ShipStatus] varchar(255),
@@ -286,12 +286,12 @@ CREATE TABLE [T_STG_SHIP_DATA_DEAD] (
     [PumpingCapacityM3]  varchar(255)
 );
 
--- DROP TABLE T_SHIP_DATA_DEAD;
--- TRUNCATE TABLE T_SHIP_DATA_DEAD;
--- SELECT * FROM T_SHIP_DATA_DEAD;
+-- DROP TABLE T_SHIP_DATA;
+-- TRUNCATE TABLE T_SHIP_DATA;
+-- SELECT * FROM T_SHIP_DATA;
 -- Script for creation of the main tables
 -- TODO :: create the primary key and other constraints
-CREATE TABLE [T_SHIP_DATA_DEAD] (
+CREATE TABLE [T_SHIP_DATA] (
 	[ID] bigint IDENTITY(1,1) PRIMARY KEY,
     [LRIMOShipNo] bigint,
     [ShipName] varchar(255),
@@ -546,7 +546,7 @@ CREATE TABLE T_SHPDT_TBL_SHPTYPCD (
 
 
 -- Staging table for ShipData's TblSpecialFeature
--- TRUNCATE TABLE [T_STG_SHPDT_TBL_SPLFEAT
+-- TRUNCATE TABLE T_STG_SHPDT_TBL_SPLFEAT
 -- SELECT * FROM T_STG_SHPDT_TBL_SPLFEAT
 -- DROP TABLE [T_STG_SHPDT_TBL_SPLFEAT]
 CREATE TABLE T_STG_SHPDT_TBL_SPLFEAT (
