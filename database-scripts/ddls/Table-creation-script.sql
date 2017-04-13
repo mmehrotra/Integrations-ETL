@@ -62,6 +62,8 @@ CREATE TABLE [T_CARGO_CARRYING_SHIP] (
     [SOURCE_FILE_NAME] VARCHAR(255)
 );
 
+CREATE UNIQUE INDEX IDX_T_CARGO_CARRYING_SHIP_1 ON T_CARGO_CARRYING_SHIP(LRIMOShipNo,MovementDateTime);
+
 -- Staging table for Cargo's TblLastPortOfCall
 -- TRUNCATE TABLE [T_STG_CARGO_TBL_LAST_PORT_OF_CALL];
 -- SELECT * FROM [T_STG_CARGO_TBL_LAST_PORT_OF_CALL];
@@ -165,6 +167,8 @@ CREATE TABLE [T_OFFSHORE_MISC] (
     [REC_UPDATED_BY] VARCHAR(255),
     [SOURCE_FILE_NAME] VARCHAR(255)
 );
+
+CREATE UNIQUE INDEX IDX_T_OFFSHORE_MISC_1 ON T_OFFSHORE_MISC(LRIMOShipNo,MovementDateTime);
 
 -- Staging table for Cargo's TblLastPortOfCall
 -- TRUNCATE TABLE [T_STG_OFFSHORE_TBL_LAST_PORT_OF_CALL];
@@ -300,7 +304,7 @@ CREATE TABLE [T_SHIP_DATA] (
     [ShiptypeLevel5] varchar(255),
     [Deadweight] bigint,
     [GrossTonnage] bigint,
-    [DateOfBuild] bigint,
+    [DateOfBuild] DATE,
     [FlagName] varchar(255),
     [MaritimeMobileServiceIdentityMMSINumber] varchar(255),
     [CallSign] varchar(20),
@@ -344,7 +348,7 @@ CREATE TABLE [T_SHIP_DATA] (
     [TechnicalManagerCountryOfDomicile] varchar(255),
     [TechnicalManagerCountryOfRegistration] varchar(255),
     [ContractDate] DATE,
-    [NewconstructionEntryDate] varchar(255),
+    [NewconstructionEntryDate] DATE,
     [CountryOfBuild] varchar(255),
     [Speedmax] float,
     [Speedservice] float,
